@@ -50,7 +50,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 4em 2em;
 }
 
 img {
@@ -134,6 +134,15 @@ header {
 .logo {
     max-width: 100px;
 }
+
+.logo-title {
+    font-family: "Poppins", system-ui, sans-serif;
+    font-size: 1.5rem;
+    font-weight: var(--fw-reg);
+    letter-spacing: 0.08em;
+    color: var(--clr-dark);
+}
+
 
 .nav {
     position: fixed;
@@ -244,7 +253,7 @@ header {
     display: inline-block;
 } */
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .intro {
         display: grid;
         width: min-content;
@@ -280,7 +289,7 @@ header {
     background-color: var(--clr-dark);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
-    /* background-blend-mode: multiply; */
+    background-blend-mode: overlay;
     color: var(--clr-light);
     text-align: center;
 }
@@ -308,6 +317,26 @@ header {
     max-width: 500px;
     margin: 0 auto;
 }
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-list li {
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 0.85rem;
+    letter-spacing: 0.03em;
+}
+
 
 @media (min-width: 800px) {
     .services {
@@ -442,4 +471,65 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+.portfolio-item-individual img {
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p,
+.portfolio-item-individual ul {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.creators,
+.play-game {
+    padding-top: .5em;
+}
+
+.creators__list {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    list-style: none;
+    padding: 0;
+    margin: 1em auto 0;
+    max-width: 600px;
+}
+
+.creators__list li {
+    margin-bottom: 0.25em;
+}
+
+.creators__list a {
+    color: var(--clr-dark);
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+}
+
+.creators__list a:hover {
+    color: var(--clr-accent);
+}
+
+/* Center the play section content like the text above */
+.play-game, .action-btn {
+    text-align: center;
+    padding: 0;
+}
+
+.play-game p, .action-btn p {
+    max-width: 600px;
+    margin: 0.5em auto;
 }

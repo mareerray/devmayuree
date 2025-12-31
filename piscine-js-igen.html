@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevMayuree Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Christmas lights project-->
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                project <strong>piscine-js-igen</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro"> A shooting flying letters game</p>
+            <img src="img/piscine-js-igen.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>Piscine-js-igen game application is a single-player game inspired by the classic "Duck Hunt" but with a twist: instead of shooting ducks, the player aims to shoot letters to complete JavaScript-related words.</p>
+            <img src="img/piscine-js-igen-01.png" alt="">
+            <p>Piscine-js-igen is a game where a player complete JavaScript-related words by shooting flying letters. Each round consists of six words to complete within a 60-second time limit. Players use the arrow keys to move a crosshair and the spacebar to shoot letters. The game pauses with the Esc key, allowing players to navigate a pause menu using arrow keys and the spacebar.</p>
+           <p><strong>Game Features</strong></p>
+            <ul>
+                <li>Word Completion: Player completes words by shooting flying letters.</li>
+                <li>Time Limit: Each round has a 60-second timer.</li>
+                <li>Controls: Arrow keys for movement, spacebar to shoot, and Esc to pause.</li>
+                <li>Pause Menu: Navigate with arrow keys and confirm with the spacebar.</li>
+                <li>Status Tracking: Timer, score, and bullet count are displayed on the screen.</li>
+            </ul>
+
+            <p><strong>Scoring System</strong></p>
+            <ul>
+                <li>Correct Letter Hit: 100 points.</li>
+                <li>Combo Bonus: +10 points for each consecutive correct hit.</li>
+                <li>Game Success: Complete all words within the time limit without running out of bullets.</li>
+            </ul>
+
+            <p><strong>Tech Stack</strong></p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <section class="creators">
+                <p><strong>Creators</strong></p>
+                <ul class="creators__list">
+                    <li>
+                        <a href="https://github.com/AllenLeeyn" target="_blank">
+                            Allen Lee
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/mareerray" target="_blank">
+                            Mayuree Reunsati
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kurizma" target="_blank">
+                            Joon Kim
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+                </section>
+
+                <section class="play-game">
+                <h2 class="section__title">Play the Game</h2>
+                <p>This game is currently playable only on desktop with a keyboard.</p>
+                <p>
+                    <a class="btn" href="https://mareerray.github.io/piscine-js-igen/" target="_blank">
+                    Play Piscine-js-igen
+                    </a>
+                </p>
+            </section>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/mareerray">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/">
+                        <i class="fa-brands fa-instagram"></i>                    
+                    </a>
+                </li>
+
+            </ul>
+        </footer>       
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

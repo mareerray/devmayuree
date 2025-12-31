@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevMayuree Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Christmas lights project-->
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                project <strong>christmas lights</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Christmas & New Year Card</p>
+            <img src="img/christmaslights.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>A small festive web page built with HTML and CSS and a little JavaScript, featuring animated glowing lights, a falling snow effect, background music, and a Christmas/New Year greeting.</p>
+            <!-- <img src="img/portfolio-details.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
+            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p> -->
+            <p><strong>Features</strong></p>
+            <ul>
+                <li>Animated colored circles with glow effects</li>
+                <li>Layered falling snow background using CSS radial-gradient and @keyframes</li>
+                <li>Centered greeting text with custom Google Fonts</li>
+                <li>Responsive layout for different screen sizes</li>
+                <li>Footer with GitHub and LinkedIn social links (Font Awesome icons)</li>
+                <li>Background music with a toggle button (speaker icon) in the footer</li>
+            </ul>
+
+            <p><strong>Tech Stack</strong></p>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (for music toggle)</li>
+                <li>Google Fonts (Indie Flower, Poppins)</li>
+                <li>Font Awesome icons</li>
+            </ul>
+
+            <section class="creators">
+                <p><strong>Creators</strong></p>
+                <ul class="creators__list">
+                    <li>
+                        <a href="https://github.com/mareerray" target="_blank">
+                            Mayuree Reunsati
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="action-btn">
+                <h2 class="section__title">View the Card</h2>
+                <p>This festive card works on both desktop and mobile devices.</p>
+                <p>
+                    <a class="btn" href="https://mareerray.github.io/christmas-lights/" target="_blank">
+                    Open Christmas Lights Card
+                    </a>
+                </p>
+            </section>
+
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/mareerray">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/">
+                        <i class="fa-brands fa-instagram"></i>                    
+                    </a>
+                </li>
+
+            </ul>
+        </footer>       
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
