@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevMayuree Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1 class="logo-title">&lt;devmayuree&gt;</h1>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                project <strong>daily-todo</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">todo list app</p>
+            <img src="img/daily-todo-01.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <p>A modern, responsive todo list application built with vanilla JavaScript, featuring priority management, filtering, and sorting capabilities.</p>
+            <img src="img/daily-todo-01.png" alt="">
+            
+            <p><strong>Features</strong></p>
+            
+            <p>📅 <strong>Daily Task Organization</strong></p>
+            <ul>
+                <li>Date-based task management with date picker</li>
+                <li>Navigate between dates using previous/next day buttons</li>
+                <li>View and manage tasks specific to each date</li>
+                <li>Tasks are automatically sorted by priority for each date</li>
+            </ul>
+            
+            <p>✨ <strong>Priority System</strong></p>
+            <ul>
+                <li>Three priority levels: High (do it now), Medium (finish soon), Low (plan for later)</li>
+                <li>Visual priority indicators with color-coded badges</li>
+                <li>Pulsing animation for high-priority tasks</li>
+            </ul>
+            
+            <p>🔍 <strong>Smart Filtering</strong></p>
+            <ul>
+                <li>Filter by completion status (All, Completed, Active)</li>
+                <li>Filter by priority level (High, Medium, Low)</li>
+            </ul>
+            
+            <p>📊 <strong>Priority Sorting</strong></p>
+            <ul>
+                <li>Sort active tasks by priority with one click</li>
+                <li>Automatically displays uncompleted tasks sorted from high to low priority</li>
+            </ul>
+            
+            <p>💾 <strong>Data Persistence</strong></p>
+            <ul>
+                <li>Tasks are saved to localStorage with their task dates</li>
+                <li>Data persists across browser sessions</li>
+                <li>Tasks organized and retrieved by date</li>
+            </ul>
+            
+            <p>📱 <strong>Responsive Design</strong></p>
+            <ul>
+                <li>Mobile-friendly layout with optimized controls</li>
+                <li>Glass morphism UI with gradient accents</li>
+                <li>Smooth animations and transitions</li>
+            </ul>
+            
+            <p><strong>Technologies Used</strong></p>
+            <ul>
+                <li>HTML5 - Structure</li>
+                <li>CSS3 - Styling with custom properties, flexbox, and media queries</li>
+                <li>Vanilla JavaScript - Application logic and DOM manipulation</li>
+                <li>Bootstrap Icons - Modern icon set</li>
+                <li>localStorage API - Data persistence</li>
+            </ul>
+            
+            <p><strong>Usage</strong></p>
+            <ul>
+                <li><strong>Select a Date:</strong> Use the date picker or previous/next buttons to navigate between dates</li>
+                <li><strong>Add a Task:</strong> Enter your task, select a priority level, and click the + button</li>
+                <li><strong>Complete a Task:</strong> Click the checkmark icon to mark as complete</li>
+                <li><strong>Delete a Task:</strong> Click the trash icon to remove a task</li>
+                <li><strong>Filter Tasks:</strong> Use the dropdown to filter by status or priority</li>
+                <li><strong>Sort Tasks:</strong> Click the "Priority" button to view active tasks sorted by priority</li>
+                <li><strong>Navigate Dates:</strong> Tasks are automatically organized by date, allowing you to plan ahead or review past tasks</li>
+            </ul>
+
+            <section class="creators">
+                <p><strong>Creators</strong></p>
+                <ul class="creators__list">
+                    <li>
+                        <a href="https://github.com/mareerray" target="_blank">
+                            Mayuree Reunsati
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="action-btn">
+                <h2 class="section__title">Explore daily-todo</h2>
+                <p>Organize your daily tasks with priority management and smart filtering.</p>
+                <p>
+                    <a class="btn" href="https://mareerray.github.io/daily-todo-list/" target="_blank">
+                    Open daily-todo
+                    </a>
+                </p>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/mareerray">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/">
+                        <i class="fa-brands fa-instagram"></i>                    
+                    </a>
+                </li>
+
+            </ul>
+        </footer>  
+
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
