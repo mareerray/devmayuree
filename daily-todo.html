@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DevMayuree Portfolio Website</title>
+        <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
     <body>
         <header>
             <div class="logo">
-                <h1 class="logo-title">&lt;devmayuree&gt;</h1>
+                <a href="index.html"><img src="img/DevMayuree.png" alt="DevMayuree Logo"></a>            
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -39,14 +40,24 @@
         
         <div class="portfolio-item-individual">
             <p>A modern, responsive todo list application built with vanilla JavaScript, featuring priority management, filtering, and sorting capabilities.</p>
-            <img src="img/daily-todo-01.png" alt="">
-            
+            <img src="img/daily-todo-05.png" alt="">
+            <img src="img/daily-todo-04.png" alt="">
+            <img src="img/daily-todo-03.png" alt="">  
             <p><strong>Features</strong></p>
+
+            <p>🌐 <strong>Multilingual Interface</strong></p>
+            <ul>
+                <li>Supports 11 languages: English, Thai, German, Spanish, Finnish, Japanese, Korean, Italian, Russian, Swedish, and Ukrainian</li>
+                <li>Full interface localization, including date picker and buttons</li>
+                <li>Language switcher integrated into the main menu</li>
+                <li>Enhances accessibility for global users</li>
+            </ul>
+
             
             <p>📅 <strong>Daily Task Organization</strong></p>
             <ul>
-                <li>Date-based task management with date picker</li>
-                <li>Navigate between dates using previous/next day buttons</li>
+                <li>Date-based task management with intuitive date picker</li>
+                <li>Navigate between days using previous/next buttons</li>
                 <li>View and manage tasks specific to each date</li>
                 <li>Tasks are automatically sorted by priority for each date</li>
             </ul>
@@ -62,6 +73,7 @@
             <ul>
                 <li>Filter by completion status (All, Completed, Active)</li>
                 <li>Filter by priority level (High, Medium, Low)</li>
+                <li>Quickly focus on what matters most</li>
             </ul>
             
             <p>📊 <strong>Priority Sorting</strong></p>
@@ -74,34 +86,36 @@
             <ul>
                 <li>Tasks are saved to localStorage with their task dates</li>
                 <li>Data persists across browser sessions</li>
-                <li>Tasks organized and retrieved by date</li>
+                <li>Ensures privacy—no account or cloud sync required</li>
             </ul>
             
             <p>📱 <strong>Responsive Design</strong></p>
             <ul>
                 <li>Mobile-friendly layout with optimized controls</li>
                 <li>Glass morphism UI with gradient accents</li>
-                <li>Smooth animations and transitions</li>
+                <li>Add to home screen for a native‑app feel</li>
+                <li>Works seamlessly offline</li>
             </ul>
             
             <p><strong>Technologies Used</strong></p>
             <ul>
                 <li>HTML5 - Structure</li>
                 <li>CSS3 - Styling with custom properties, flexbox, and media queries</li>
-                <li>Vanilla JavaScript - Application logic and DOM manipulation</li>
+                <li>Vanilla JavaScript - Core logic, data handling, and DOM updates</li>
                 <li>Bootstrap Icons - Modern icon set</li>
-                <li>localStorage API - Data persistence</li>
+                <li>localStorage API - Data persistence and offline storage</li>
             </ul>
             
             <p><strong>Usage</strong></p>
             <ul>
+                <li><strong>Switch Language:</strong> Choose a preferred language from the menu to instantly update the interface</li>
                 <li><strong>Select a Date:</strong> Use the date picker or previous/next buttons to navigate between dates</li>
                 <li><strong>Add a Task:</strong> Enter your task, select a priority level, and click the + button</li>
                 <li><strong>Complete a Task:</strong> Click the checkmark icon to mark as complete</li>
                 <li><strong>Delete a Task:</strong> Click the trash icon to remove a task</li>
                 <li><strong>Filter Tasks:</strong> Use the dropdown to filter by status or priority</li>
                 <li><strong>Sort Tasks:</strong> Click the "Priority" button to view active tasks sorted by priority</li>
-                <li><strong>Navigate Dates:</strong> Tasks are automatically organized by date, allowing you to plan ahead or review past tasks</li>
+                <li><strong>Plan & Review:</strong> Navigate dates to plan ahead or review past tasks</li>
             </ul>
 
             <section class="creators">

@@ -38,6 +38,7 @@
 
 html {
     scroll-behavior: smooth;
+    overscroll-behavior: none;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
 }
 
 section {
-    padding: 4em 2em;
+    padding: 1em 2em;
 }
 
 img {
@@ -182,7 +183,7 @@ header {
     cursor: pointer;
     position: absolute;
     right: 1em;
-    top: 1em;
+    top: 2em;
     z-index: 1000;
 }
 
