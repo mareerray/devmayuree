@@ -118,6 +118,10 @@
                 transition: opacity 200ms ease;
             }
 
+            .mobile-card__link + .mobile-card__link {
+                margin-top: 0.35em;
+            }
+
             .mobile-card__link:hover {
                 opacity: 0.7;
             }
@@ -254,10 +258,13 @@
                 <div class="mobile-card">
                     <div class="mobile-card__icon">♟️</div>
                     <h3 class="mobile-card__title">Chess</h3>
-                    <p class="mobile-card__desc">Real-time multiplayer chess with a Flutter frontend and a Go backend over WebSockets. Supports public matchmaking, private rooms with a room code, and a practice bot. Uses ngrok to expose the backend over the internet for mobile testing.</p>
+                    <p class="mobile-card__desc">Real-time multiplayer chess with a Flutter frontend and a Go backend over WebSockets. Supports public matchmaking, private rooms with a room code, and a practice bot. Uses Render to host the live server so visitors can try the app online.</p>
                     <ul class="mobile-card__tags">
-                        <li>Flutter</li><li>Go</li><li>WebSocket</li><li>ngrok</li>
+                        <li>Flutter</li><li>Go</li><li>WebSocket</li><li>Render</li>
                     </ul>
+                    <a href="https://chess-webapp-sks0.onrender.com/" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-play"></i> Live Demo
+                    </a>
                     <a href="https://github.com/mareerray/chess" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-github"></i> View on GitHub
                     </a>
@@ -284,6 +291,9 @@
                     <ul class="mobile-card__tags">
                         <li>Flutter</li><li>Dart</li><li>shared_preferences</li><li>audioplayers</li>
                     </ul>
+                    <a href="https://youtube.com/shorts/9xN22vaiK70?feature=share" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i> Watch Demo
+                    </a>
                     <a href="https://github.com/mareerray/twenty-forty-eight" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-github"></i> View on GitHub
                     </a>
