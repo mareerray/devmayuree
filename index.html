@@ -9,7 +9,117 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            /* Mobile Apps Section */
+            .my-mobile-apps {
+                background-color: var(--clr-dark);
+                color: var(--clr-light);
+                text-align: center;
+                padding: 3em 2em;
+            }
 
+            .section__title--mobile {
+                color: var(--clr-accent);
+                position: relative;
+            }
+
+            .section__title--mobile::after {
+                content: '';
+                display: block;
+                width: 3em;
+                height: 1px;
+                margin: 0.5em auto 1em;
+                background: var(--clr-light);
+                opacity: 0.25;
+            }
+
+            .section__subtitle--mobile {
+                color: var(--clr-accent);
+                font-weight: var(--fw-bold);
+                margin-bottom: 2em;
+                font-size: var(--fs-h3);
+            }
+
+            .mobile-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 1.5em;
+                max-width: 1100px;
+                margin: 0 auto 2em;
+                text-align: left;
+            }
+
+            .mobile-card {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 8px;
+                padding: 1.5em;
+                transition: transform 250ms ease, background 250ms ease;
+                display: flex;
+                flex-direction: column;
+                gap: 0.75em;
+            }
+
+            .mobile-card:hover {
+                transform: translateY(-4px);
+                background: rgba(22, 224, 189, 0.08);
+            }
+
+            .mobile-card__icon {
+                font-size: 1.75rem;
+            }
+
+            .mobile-card__title {
+                font-size: var(--fs-h3);
+                font-weight: var(--fw-bold);
+                color: var(--clr-light);
+                margin: 0;
+            }
+
+            .mobile-card__desc {
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.7);
+                line-height: 1.6;
+                margin: 0;
+                flex-grow: 1;
+            }
+
+            .mobile-card__tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.4em;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .mobile-card__tags li {
+                padding: 0.15rem 0.55rem;
+                border-radius: 999px;
+                background: rgba(22, 224, 189, 0.12);
+                border: 1px solid rgba(22, 224, 189, 0.25);
+                font-size: 0.78rem;
+                color: var(--clr-accent);
+                letter-spacing: 0.02em;
+            }
+
+            .mobile-card__link {
+                display: inline-flex;
+                align-items: center;
+                gap: 0.4em;
+                color: var(--clr-accent);
+                text-decoration: none;
+                font-size: 0.85rem;
+                font-weight: var(--fw-bold);
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                transition: opacity 200ms ease;
+            }
+
+            .mobile-card__link:hover {
+                opacity: 0.7;
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -25,6 +135,7 @@
                     <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#mobile" class="nav__link">Mobile Apps</a></li>
                 </ul>
             </nav>
         </header>
@@ -49,13 +160,15 @@
                 </div> <!-- / service -->
                 
                 <div class="service">
-                    <h3>E-Commerce</h3>
-                    <p>I am especially interested in online stores and digital customer journeys, from product listing layouts to checkout flows. I enjoy improving clarity, structure, and usability in e‑commerce experiences.</p>
+                    <h3>Mobile Development</h3>
+                    <p>I build cross-platform mobile applications with Flutter and Dart, from casual games and map tools to real-time multiplayer apps. I enjoy using device sensors and APIs to create interactive, hands-on experiences.</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
                     <h3>Tools & Technologies</h3>
                     <ul class="tech-list">
+                        <li>Flutter</li>
+                        <li>Dart</li>
                         <li>Go</li>
                         <li>Java</li>
                         <li>Spring Boot</li>
@@ -88,7 +201,7 @@
             
             <div class="about-me__body">
                 <p>With over a decade of experience in Finnish pharmacies and online retail, I bring a service‑oriented and detail‑driven mindset into software development. My background has trained me to work accurately under pressure, understand user needs, and improve everyday processes, which now shapes how I design and build digital products.</p>
-                <p>Currently, I am focused on modern web development, learning to create responsive, accessible interfaces and clean, maintainable code while gradually building a portfolio of real projects.</p>
+                <p>Currently, I am focused on modern web and mobile development, learning to create responsive, accessible interfaces and clean, maintainable code while gradually building a portfolio of real projects.</p>
             </div>
             
             <img src="img/Mayuree-02.jpg" alt="Mayuree holding a book and smiling" class="about-me__img">
@@ -127,11 +240,98 @@
                 
             </div>
         </section>
+
+        <!-- Mobile Apps -->
+        <section class="my-mobile-apps" id="mobile">
+            <h2 class="section__title section__title--mobile">Mobile Apps</h2>
+            <p class="section__subtitle section__subtitle--mobile">Flutter projects built for Android &amp; iOS</p>
+
+            <div class="mobile-grid">
+
+                <!-- Chess -->
+                <div class="mobile-card">
+                    <div class="mobile-card__icon">♟️</div>
+                    <h3 class="mobile-card__title">Chess</h3>
+                    <p class="mobile-card__desc">Real-time multiplayer chess with a Flutter frontend and a Go backend over WebSockets. Supports public matchmaking, private rooms with a room code, and a practice bot. Uses ngrok to expose the backend over the internet for mobile testing.</p>
+                    <ul class="mobile-card__tags">
+                        <li>Flutter</li><li>Go</li><li>WebSocket</li><li>ngrok</li>
+                    </ul>
+                    <a href="https://github.com/mareerray/chess" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <!-- Sky Map -->
+                <div class="mobile-card">
+                    <div class="mobile-card__icon">🌌</div>
+                    <h3 class="mobile-card__title">Sky Map</h3>
+                    <p class="mobile-card__desc">Interactive sky map that uses GPS, accelerometer, and magnetometer to show real-time celestial objects. Tilt your phone to explore the sky — tap planets, stars, and 11 constellations for descriptions. Renders at 10+ FPS using CustomPainter and BLoC.</p>
+                    <ul class="mobile-card__tags">
+                        <li>Flutter</li><li>BLoC</li><li>CustomPainter</li><li>GPS</li><li>Sensors</li>
+                    </ul>
+                    <a href="https://github.com/mareerray/sky-map" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <!-- 2048 -->
+                <div class="mobile-card">
+                    <div class="mobile-card__icon">🔢</div>
+                    <h3 class="mobile-card__title">2048</h3>
+                    <p class="mobile-card__desc">A Flutter implementation of the classic 2048 puzzle game. Swipe to merge tiles and reach 2048. Features smooth tile animations, background music, sound effects, best score saved locally, and a swipe pad for accessibility.</p>
+                    <ul class="mobile-card__tags">
+                        <li>Flutter</li><li>Dart</li><li>shared_preferences</li><li>audioplayers</li>
+                    </ul>
+                    <a href="https://github.com/mareerray/twenty-forty-eight" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <!-- Map Markers -->
+                <div class="mobile-card">
+                    <div class="mobile-card__icon">📍</div>
+                    <h3 class="mobile-card__title">Map Markers</h3>
+                    <p class="mobile-card__desc">A travel app prototype for a startup investor demo. Browse an interactive Google Map, search for places via the Google Places API, bookmark your favorites with persistent storage, and track your real-time GPS location.</p>
+                    <ul class="mobile-card__tags">
+                        <li>Flutter</li><li>Google Maps</li><li>Places API</li><li>geolocator</li>
+                    </ul>
+                    <a href="https://github.com/mareerray/map-markers" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <!-- Bouncer -->
+                <div class="mobile-card">
+                    <div class="mobile-card__icon">🏐</div>
+                    <h3 class="mobile-card__title">Bouncer</h3>
+                    <p class="mobile-card__desc">A retro 90s-style ball game where you tilt your phone to move the paddle — no touch controls! Destroy all blocks to win. Built with accelerometer input, real-time physics, score tracking, sound, and a pause feature.</p>
+                    <ul class="mobile-card__tags">
+                        <li>Flutter</li><li>Accelerometer</li><li>sensors_plus</li><li>Physics</li>
+                    </ul>
+                    <a href="https://github.com/mareerray/bouncer" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+                <!-- Movie List -->
+                <div class="mobile-card">
+                    <div class="mobile-card__icon">🎬</div>
+                    <h3 class="mobile-card__title">Movie List</h3>
+                    <p class="mobile-card__desc">Browse IMDb top-rated movies and series with a live search, image slider with swipe navigation, and a dark cinema theme. Sorted by rating and works on Android, iOS, and web (Chrome).</p>
+                    <ul class="mobile-card__tags">
+                        <li>Flutter</li><li>Dart</li><li>FutureBuilder</li><li>Material Design</li>
+                    </ul>
+                    <a href="https://github.com/mareerray/movie-list" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+
+            </div>
+        </section>
         
         
         <!-- Footer -->
         <footer class="footer">
-            <!-- replace with your own email address -->
             <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
