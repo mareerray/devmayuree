@@ -3,129 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Mayuree Reunsati — frontend and mobile developer in Finland. Portfolio of web apps, Flutter mobile apps, and full-stack projects.">
         <title>DevMayuree Portfolio Website</title>
         <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
-        <style>
-            /* Mobile Apps Section */
-            .my-mobile-apps {
-                background-color: var(--clr-dark);
-                color: var(--clr-light);
-                text-align: center;
-                padding: 3em 2em;
-            }
-
-            .section__title--mobile {
-                color: var(--clr-accent);
-                position: relative;
-            }
-
-            .section__title--mobile::after {
-                content: '';
-                display: block;
-                width: 3em;
-                height: 1px;
-                margin: 0.5em auto 1em;
-                background: var(--clr-light);
-                opacity: 0.25;
-            }
-
-            .section__subtitle--mobile {
-                color: var(--clr-accent);
-                font-weight: var(--fw-bold);
-                margin-bottom: 2em;
-                font-size: var(--fs-h3);
-            }
-
-            .mobile-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 1.5em;
-                max-width: 1100px;
-                margin: 0 auto 2em;
-                text-align: left;
-            }
-
-            .mobile-card {
-                background: rgba(255, 255, 255, 0.05);
-                border: 1px solid rgba(255, 255, 255, 0.1);
-                border-radius: 8px;
-                padding: 1.5em;
-                transition: transform 250ms ease, background 250ms ease;
-                display: flex;
-                flex-direction: column;
-                gap: 0.75em;
-            }
-
-            .mobile-card:hover {
-                transform: translateY(-4px);
-                background: rgba(22, 224, 189, 0.08);
-            }
-
-            .mobile-card__icon {
-                font-size: 1.75rem;
-            }
-
-            .mobile-card__title {
-                font-size: var(--fs-h3);
-                font-weight: var(--fw-bold);
-                color: var(--clr-light);
-                margin: 0;
-            }
-
-            .mobile-card__desc {
-                font-size: 0.9rem;
-                color: rgba(255, 255, 255, 0.974);
-                line-height: 1.6;
-                margin: 0;
-                flex-grow: 1;
-            }
-
-            .mobile-card__tags {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.4em;
-                list-style: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .mobile-card__tags li {
-                padding: 0.15rem 0.55rem;
-                border-radius: 999px;
-                background: rgba(255, 255, 255, 0.08);
-                border: 1px solid rgba(255, 255, 255, 0.15);
-                /* background: rgba(22, 224, 189, 0.12);
-                border: 1px solid rgba(22, 224, 189, 0.25); */
-                font-size: 0.78rem;
-                color: white;
-                letter-spacing: 0.02em;
-            }
-
-            .mobile-card__link {
-                display: inline-flex;
-                align-items: center;
-                gap: 0.4em;
-                color: var(--clr-accent);
-                text-decoration: none;
-                font-size: 0.85rem;
-                font-weight: var(--fw-bold);
-                letter-spacing: 0.05em;
-                text-transform: uppercase;
-                transition: opacity 200ms ease;
-            }
-
-            .mobile-card__link + .mobile-card__link {
-                margin-top: 0.35em;
-            }
-
-            .mobile-card__link:hover {
-                opacity: 0.7;
-            }
-        </style>
     </head>
     <body>
         <header>
@@ -220,27 +104,27 @@
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="piscine-js-igen.html" class="portfolio__item">
+                <a href="piscine-js-igen.html" class="portfolio__item" target="_blank" rel="noopener noreferrer">
                     <img src="img/piscine-js-igen.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="colorcurio.html" class="portfolio__item">
+                <a href="colorcurio.html" class="portfolio__item" target="_blank" rel="noopener noreferrer">
                     <img src="img/colorcurio-02.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="christmas-lights.html" class="portfolio__item">
+                <a href="christmas-lights.html" class="portfolio__item" target="_blank" rel="noopener noreferrer">
                     <img src="img/christmaslights-01.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 04 --> 
-                <a href="angul-it.html" class="portfolio__item">
+                <a href="angul-it.html" class="portfolio__item" target="_blank" rel="noopener noreferrer">
                     <img src="img/angul-it-01.png" alt="" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 05 -->
-                <a href="daily-todo.html" class="portfolio__item">
+                <a href="daily-todo.html" class="portfolio__item" target="_blank" rel="noopener noreferrer">
                     <img src="img/daily-todo-01.png" alt="" class="portfolio__img">
                 </a>
                 
@@ -350,17 +234,17 @@
             <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/mareerray">
+                    <a class="social-list__link" href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/">
+                    <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/" target="_blank" rel="noopener noreferrer" title="Instagram">
                         <i class="fa-brands fa-instagram"></i>                    
                     </a>
                 </li>
