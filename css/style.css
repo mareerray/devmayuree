@@ -177,14 +177,25 @@ header {
 }
 
 .nav-toggle {
-    padding: .5em;
     background: transparent;
     border: 0;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     right: 1em;
     top: 2em;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.nav-toggle::after {
+    content: "MENU";
+    font-size: 0.65rem;
+    font-weight: var(--fw-bold);
+    color: var(--clr-accent);
+    letter-spacing: 0.1em;
 }
 
 .nav-open .nav {
@@ -231,8 +242,8 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 6px; }
-.hamburger::after { bottom: 6px; }
+.hamburger::before { top: 10px; }
+.hamburger::after { bottom: 10px; }
 
 
 /*  Intro section  */
