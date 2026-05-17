@@ -12,10 +12,9 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div id="header"></div>
-        <!-- <header>
+        <header>
             <div class="logo">
-                <a href="#home"><img src="img/DevMayuree.png" alt="DevMayuree Logo"></a>
+                <a href="index.html"><img src="img/DevMayuree.png" alt="DevMayuree Logo"></a>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -29,7 +28,7 @@
                     <li class="nav__item"><a href="#mobile" class="nav__link">Mobile Apps</a></li>
                 </ul>
             </nav>
-        </header> -->
+        </header>
 
         <!-- Introduction -->
             <section class="intro" id="home">
@@ -127,7 +126,7 @@
                 </a>
                 
                 <!-- Portfolio item 05 -->
-                <a href="/daily-todo/" class="portfolio__item" target="_blank" rel="noopener noreferrer" title="Open Daily Todo project">
+                <a href="daily-todo.html" class="portfolio__item" target="_blank" rel="noopener noreferrer" title="Open Daily Todo project">
                     <img src="img/daily-todo-01.png" alt="" class="portfolio__img">
                 </a>
                 
@@ -233,7 +232,7 @@
         
         
         <!-- Footer -->
-        <!-- <footer class="footer">
+        <footer class="footer">
             <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
@@ -253,24 +252,8 @@
                 </li>
 
             </ul>
-        </footer>   -->
-        <div id="footer"></div>
+        </footer>  
 
-        <script>
-            fetch('/header.html')
-                .then(res => res.text())
-                .then(data => {
-                    document.getElementById('header').innerHTML = data;
-                    // Load nav script AFTER header is in the page
-                    const script = document.createElement('script');
-                    script.src = 'js/index.js';
-                    document.body.appendChild(script);
-                });
-
-            fetch('/footer.html')
-                .then(res => res.text())
-                .then(data => document.getElementById('footer').innerHTML = data);
-        </script>
-        
+        <script src="js/index.js"></script>
     </body>
 </html>
