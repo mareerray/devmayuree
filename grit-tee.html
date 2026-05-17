@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="grit:Tee — a full e-commerce marketplace with microservice architecture, Angular frontend, and Spring Boot backend.">
+        <title>grit:Tee — DevMayuree</title>
+        <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="/devmayuree/"><img src="img/DevMayuree.png" alt="DevMayuree Logo"></a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/devmayuree/#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="/devmayuree/#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="/devmayuree/#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="/devmayuree/#work" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="/devmayuree/#mobile" class="nav__link">Mobile Apps</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                project <strong>grit:Tee website</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">e-commerce marketplace</p>
+            <img src="img/grit-tee-02.png" alt="grit:Tee marketplace screenshot" class="intro__img">
+        </section>
+
+        <div class="portfolio-item-individual">
+            <p>grit:Tee is a full e-commerce marketplace designed for T-shirt creators and fans, built with a microservice architecture featuring a shopping cart, order management, user/seller analytics, and faceted product search.</p>
+
+            <p><strong>Architecture & Tech Stack</strong></p>
+            <ul>
+                <li><strong>Frontend:</strong> Angular 17+ with Angular Material and Ng2-charts</li>
+                <li><strong>Backend:</strong> Spring Boot 3.x Microservices</li>
+                <li><strong>Gateway:</strong> Spring Cloud Gateway with JWT validation, CORS, and header injection</li>
+                <li><strong>Discovery:</strong> Eureka-based service registry</li>
+                <li><strong>Database:</strong> MongoDB Atlas (Cloud)</li>
+                <li><strong>Object Storage:</strong> Cloudflare R2</li>
+                <li><strong>Messaging:</strong> Apache Kafka for async service events</li>
+                <li><strong>Host:</strong> Hetzner Virtual Machine</li>
+            </ul>
+            <div class="img-pair">
+                <img src="img/grit-tee-03.png" alt="grit:Tee marketplace homepage">
+                <img src="img/grit-tee-04.png" alt="grit:Tee marketplace product listing">
+            </div>
+
+            <p><strong>Core Features</strong></p>
+
+            <p>🔍 <strong>Faceted Product Search & Pagination</strong></p>
+            <ul>
+                <li>Regex-based keyword search on product names and descriptions</li>
+                <li>Price and category facets</li>
+                <li>Paginated results to maintain performance at scale</li>
+            </ul>
+
+            <p>🛒 <strong>Two-Step Checkout & Reservation Logic</strong></p>
+            <ul>
+                <li>Step 1 (Pending): Reserve stock at checkout initiation</li>
+                <li>Step 2 (Commit): Confirm order and convert reservation to permanent stock deduction</li>
+                <li>Scheduled cleanup task runs every 60s to release expired reservations</li>
+            </ul>
+
+            <p>📊 <strong>Advanced Analytics Pipelines</strong></p>
+            <ul>
+                <li><strong>Client View:</strong> Total spend, top categories, and most purchased products</li>
+                <li><strong>Seller View:</strong> Total revenue, best-selling products, and units sold</li>
+            </ul>
+
+            <p><strong>CI/CD & Code Quality</strong></p>
+            <ul>
+                <li>Jenkins pipeline orchestrates the full lifecycle from checkout to deploy and verify</li>
+                <li>Every pull request is automatically analyzed by SonarCloud.io</li>
+                <li>Quality gate enforces no code with security vulnerabilities is merged into main</li>
+                <li>Verified builds are automatically containerized and deployed to a staging environment</li>
+                <li>Rollback support included in the deployment pipeline</li>
+            </ul>
+
+            <div class="img-pair">
+                <img src="img/grit-tee-05.png" alt="">
+                <img src="img/grit-tee-06.png" alt="">
+            </div>
+
+            <p><strong>Technologies Used</strong></p>
+            <ul>
+                <li>Angular 17+, TypeScript — Frontend</li>
+                <li>Spring Boot 3.x, Java — Backend microservices</li>
+                <li>Spring Cloud Gateway, Eureka — API gateway and service discovery</li>
+                <li>MongoDB Atlas — Cloud database</li>
+                <li>Apache Kafka — Async messaging</li>
+                <li>Docker, Jenkins — CI/CD pipeline</li>
+                <li>SonarCloud — Code quality gates</li>
+                <li>Cloudflare R2 — Media/image storage</li>
+            </ul>
+
+            <section class="creators">
+                <p><strong>Creators</strong></p>
+                <ul class="creators__list">
+                    <li>
+                        <a href="https://github.com/mareerray" target="_blank" rel="noopener">
+                            Mayuree Reunsati
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kurizma" target="_blank" rel="noopener noreferrer">
+                            Joon Kim
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Toft08" target="_blank" rel="noopener noreferrer">
+                            Toft Diederichs
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                                        <li>
+                        <a href="https://github.com/cmbigk" target="_blank" rel="noopener noreferrer">
+                            Chan Myint
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+
+                </ul>
+                </section>
+
+            <section class="action-btn">
+                <h2 class="section__title">Explore grit:Tee</h2>
+                <p>A full-stack e-commerce marketplace with microservice architecture and CI/CD pipeline.</p>
+                <p>
+                    <a class="btn" href="https://github.com/kurizma/buy-two" target="_blank" rel="noopener noreferrer">
+                        View on GitHub
+                    </a>
+                </p>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

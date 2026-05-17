@@ -495,6 +495,28 @@ header {
     margin-right: auto;
 }
 
+.img-pair {
+    display: flex;
+    gap: 1em;
+    margin: 1em 0;
+}
+
+.img-pair img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* stack on small screens */
+@media (max-width: 600px) {
+    .img-pair {
+        flex-direction: column;
+    }
+
+    .img-pair img {
+        width: 100%;
+    }
+}
+
 .creators,
 .play-game {
     padding-top: .5em;
