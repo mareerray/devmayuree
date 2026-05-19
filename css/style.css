@@ -517,6 +517,12 @@ header {
     }
 }
 
+.mobile-card__icon img {
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+}
+
 .creators,
 .play-game {
     padding-top: .5em;
