@@ -14,7 +14,9 @@
     <body>
         <header>
             <div class="logo">
-                <a href="/devmayuree/"><img src="img/DevMayuree.png" alt="DevMayuree Logo" ></a>            
+                <a href="/devmayuree/">
+                    <img src="img/DevMayuree.png" alt="DevMayuree Logo" >    
+                </a>          
             </div>
             <div class="nav-social">
                 <a href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -42,9 +44,15 @@
             <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
                 Hi, I am <strong>Mayuree Reunsati</strong>
+                <span class="open-to-work open-to-work--visible">
+                    <span class="open-to-work__dot"></span>
+                    Open to work
+                </span>
             </h1>
             <p class="section__subtitle section__subtitle--intro">full-stack & mobile developer</p>
+            
             <img src="img/Mayuree-01.jpg" alt="a img of Mayuree Reunsati smiling" class="intro__img">
+            
         </section>
         
         
@@ -334,28 +342,37 @@
         
         
         <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/" target="_blank" rel="noopener noreferrer" title="Instagram">
-                        <i class="fa-brands fa-instagram"></i>                    
-                    </a>
-                </li>
-
-            </ul>
-        </footer>  
-
+         <!-- Contact Section -->
+            <section class="contact" id="contact">
+                <div class="contact__content">
+                    <div class="contact__left">
+                        <p class="contact__eyebrow">LET'S TALK</p>
+                        <h2 class="contact__title">Get in touch</h2>
+                        <p class="contact__body">
+                            I'm open to frontend, mobile, and full-stack opportunities across 
+                            Finland. Feel free to reach out — I'd love to hear from you.
+                        </p>
+                        <a href="mailto:mareerray@gmail.com" class="contact__email">
+                            <i class="fa-regular fa-envelope"></i> mareerray@gmail.com
+                        </a>
+                        <div class="contact__buttons">
+                            <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer" class="contact__btn">
+                                <i class="fa-brands fa-github"></i> GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer" class="contact__btn">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__right">
+                        <img src="img/DevMayuree.png" alt="DevMayuree Logo" class="contact__logo" />
+                    </div>
+                </div>
+                <div class="contact__footer">
+                    <p>© 2026 Mayuree Reunsati</p>
+                    <p>Designed & coded by Mayuree Reunsati ✦</p>
+                </div>
+            </section>
         <script src="js/index.js"></script>
     </body>
 </html>
