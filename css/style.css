@@ -13,6 +13,7 @@
     --fw-bold: 900;
 
     --clr-light: #fff;
+    --clr-mid: #f2e6e623;
     --clr-dark: #303030;
     --clr-accent: #16e0bd;
 
@@ -123,12 +124,19 @@ h3 { font-size: var(--fs-h3) }
 /* header */
 header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 1em;
+    padding: 1em 1.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;  /* just below .nav which is z-index: 100 */
+    background: transparent; /* keeps background solid while scrolling */
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 80px;
 }
 
 .logo-title {
@@ -139,6 +147,24 @@ header {
     color: var(--clr-dark);
 }
 
+.nav-social {
+    display: flex;
+    gap: 1.5rem;
+    align-items: start;
+    margin-right: 3.5rem;   
+}
+
+.nav-social a {
+    color: var(--clr-accent); 
+    font-size: 2rem;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.nav-social a:hover {
+    color: var(--clr-dark); 
+    opacity: 1;
+}
 
 .nav {
     position: fixed;
@@ -248,8 +274,11 @@ header {
 
 /*  Intro section  */
 
-.intro {
+#home,.intro {
     position: relative;
+    padding-top: 120px;
+     /* creates space for the fixed header */
+     /* can be adjusted based on header height */
 }
 
 .intro__img {
