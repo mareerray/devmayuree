@@ -664,6 +664,31 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* Add this at the bottom of your style.css */
+@media (max-width: 768px) {
+    .contact__content {
+        flex-direction: column;  /* stack left and right vertically */
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact__logo {
+        width: 180px;  /* bigger on mobile */
+        margin-top: 2rem;
+    }
+
+    .contact__buttons {
+        justify-content: center;
+    }
+
+    .contact__footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
 .footer {
     background: #111;
     color: var(--clr-accent);
