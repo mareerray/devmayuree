@@ -139,7 +139,7 @@ header {
 }
 
 .logo {
-    max-width: 74px;
+    max-width: 64px;
     opacity: 0.9;
     filter: invert(1);
 }
