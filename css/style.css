@@ -58,6 +58,7 @@ section {
 img {
     display: block;
     max-width: 100%;
+    border-radius: 4px;
 }
 
 strong {
@@ -97,6 +98,7 @@ h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
 
 .section__title {
+    margin-top: .5em;
     margin-bottom: .25em;
 }
 
@@ -136,7 +138,7 @@ header {
 }
 
 .logo {
-    max-width: 80px;
+    max-width: 74px;
 }
 
 .logo-title {
@@ -277,8 +279,6 @@ header {
 #home,.intro {
     position: relative;
     padding-top: 120px;
-     /* creates space for the fixed header */
-     /* can be adjusted based on header height */
 }
 
 .intro__img {
