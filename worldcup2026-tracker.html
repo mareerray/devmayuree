@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mayuree Reunsati — frontend and mobile developer in Finland. Portfolio of web apps, Flutter mobile apps, and full-stack projects.">
+    <title>World Cup 2026 Tracker — DevMayuree Portfolio</title>
+    <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/devmayuree/"><img src="img/DevMayuree.png" alt="DevMayuree Logo"></a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/devmayuree/#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="/devmayuree/#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="/devmayuree/#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="/devmayuree/#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="/devmayuree/#mobile" class="nav__link">Mobile Apps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            project <strong>WC2026-tracker</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Live World Cup dashboard</p>
+        <img src="img/worldcup2026-tracker.png" alt="" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>A World Cup 2026 dashboard with live score updates, built with React, TypeScript and Vite. Match data powered by the football-data.org API.</p>
+        <img src="img/worldcup2026-tracker-detail.png" alt="">
+
+        <p><strong>Features</strong></p>
+        <ul>
+            <li>Group leaderboard — top team in each of the 12 groups</li>
+            <li>Live match tracker with real-time score updates</li>
+            <li>Upcoming matches with date, time and timezone (EEST)</li>
+            <li>Top scorers rankings for WC 2026</li>
+            <li>Latest match results at a glance</li>
+            <li>Tournament progress bar (matches played vs remaining)</li>
+            <li>Image carousel of WC 2026 venues</li>
+            <li>Full group tables for all 12 groups</li>
+            <li>Team search for all 48 teams</li>
+        </ul>
+
+        <div class="img-pair">
+            <img src="img/worldcup2026-tracker-02.png" alt="worldcup2026-tracker features">
+            <img src="img/worldcup2026-tracker-03.png" alt="worldcup2026-tracker features">
+        </div>
+        <p><strong>Features</strong></p>
+
+        <p><strong>Tech Stack</strong></p>
+        <ul>
+            <li>React 18</li>
+            <li>TypeScript</li>
+            <li>Vite</li>
+            <li>React Router v6</li>
+            <li>football-data.org API</li>
+            <li>Vitest</li>
+            <li>Vercel</li>
+        </ul>
+
+        <section class="creators">
+            <p><strong>Creators</strong></p>
+            <ul class="creators__list">
+                <li>
+                    <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer">
+                        Mayuree Reunsati
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="action-btn">
+            <h2 class="section__title">Explore worldcup2026-tracker</h2>
+            <p>Track live matches, scores, standings and top scorers for FIFA World Cup 2026.</p>
+            <p>
+                <a class="btn" href="https://worldcup2026-tracker-app.vercel.app" target="_blank"
+                    rel="noopener noreferrer">
+                    Open Live Demo
+                </a>
+            </p>
+            <p>
+                <a class="btn" href="https://github.com/mareerray/worldcup2026-tracker" target="_blank"
+                    rel="noopener noreferrer">
+                    View GitHub
+                </a>
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:mareerray@gmail.com" class="footer__link">mareerray@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/mareerray" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/" target="_blank"
+                    rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

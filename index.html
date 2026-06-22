@@ -1,378 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Mayuree Reunsati — frontend and mobile developer in Finland. Portfolio of web apps, Flutter mobile apps, and full-stack projects.">
-        <title>DevMayuree Portfolio Website</title>
-        <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <a href="/devmayuree/">
-                    <img src="img/DevMayuree.png" alt="DevMayuree Logo" >    
-                </a>          
-            </div>
-            <div class="nav-social">
-                <a href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="/devmayuree/#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="/devmayuree/#services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="/devmayuree/#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="/devmayuree/#work" class="nav__link">My Work</a></li>
-                    <li class="nav__item"><a href="/devmayuree/#mobile" class="nav__link">Mobile Apps</a></li>
-                </ul>
-            </nav>
-        </header>
 
-        <!-- Introduction -->
-            <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Mayuree Reunsati</strong>
-                <span class="open-to-work open-to-work--visible">
-                    <span class="open-to-work__dot"></span>
-                    Open to work
-                </span>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">full-stack & mobile developer</p>
-            
-            <img src="img/Mayuree-01.jpg" alt="a img of Mayuree Reunsati smiling" class="intro__img">
-            
-        </section>
-        
-        
-        <!-- My services -->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Design + Development</h3>
-                    <p>I design and build responsive web interfaces with clean, readable code. My focus is on turning ideas into simple, usable layouts that work well across devices and are easy to maintain.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>Mobile Development</h3>
-                    <p>I build cross-platform mobile applications with Flutter and Dart, from casual games and map tools to real-time multiplayer apps. I enjoy using device sensors and APIs to create interactive, hands-on experiences.</p>
-                </div> <!-- / service -->
-                
-                <div class="service">
-                    <h3>Tools & Technologies</h3>
-                    <ul class="tech-list">
-                        <li>Flutter</li>
-                        <li>Dart</li>
-                        <li>Firebase</li>
-                        <li>Supabase</li>
-                        <li>Render</li>
-                        <li>Go</li>
-                        <li>Java</li>
-                        <li>Spring Boot</li>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mayuree Reunsati — frontend and mobile developer in Finland. Portfolio of web apps, Flutter mobile apps, and full-stack projects.">
+    <title>DevMayuree Portfolio Website</title>
+    <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/devmayuree/">
+                <img src="img/DevMayuree.png" alt="DevMayuree Logo">
+            </a>
+        </div>
+        <div class="nav-social">
+            <a href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/devmayuree/#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="/devmayuree/#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="/devmayuree/#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="/devmayuree/#work" class="nav__link">My Work</a></li>
+                <li class="nav__item"><a href="/devmayuree/#mobile" class="nav__link">Mobile Apps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Mayuree Reunsati</strong>
+            <span class="open-to-work open-to-work--visible">
+                <span class="open-to-work__dot"></span>
+                Open to work
+            </span>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">full-stack & mobile developer</p>
+
+        <img src="img/Mayuree-01.jpg" alt="a img of Mayuree Reunsati smiling" class="intro__img">
+
+    </section>
+
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Design + Development</h3>
+                <p>I design and build responsive web interfaces with clean, readable code. My focus is on turning ideas
+                    into simple, usable layouts that work well across devices and are easy to maintain.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Mobile Development</h3>
+                <p>I build cross-platform mobile applications with Flutter and Dart, from casual games and map tools to
+                    real-time multiplayer apps. I enjoy using device sensors and APIs to create interactive, hands-on
+                    experiences.</p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Tools & Technologies</h3>
+                <ul class="tech-list">
+                    <li>Flutter</li>
+                    <li>Dart</li>
+                    <li>Firebase</li>
+                    <li>Supabase</li>
+                    <li>Render</li>
+                    <li>Vercel</li>
+                    <li>Go</li>
+                    <li>Java</li>
+                    <li>Spring Boot</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
+                    <li>MongoDB</li>
+                    <li>SQLite</li>
+                    <li>WebSocket</li>
+                    <li>Docker</li>
+                    <li>Jenkins</li>
+                    <li>SonarQube</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+        </div> <!-- / services -->
+
+        <a href="#work" class="work-btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Designer & developer based in Finland</p>
+
+        <div class="about-me__body">
+            <p>With over a decade of experience in Finnish pharmacies and online retail, I bring a service‑oriented and
+                detail‑driven mindset into software development. My background has trained me to work accurately under
+                pressure, understand user needs, and improve everyday processes, which now shapes how I design and build
+                digital products.</p>
+            <p>Currently, I am focused on modern web and mobile development, learning to create responsive, accessible
+                interfaces and clean, maintainable code while gradually building a portfolio of real projects.</p>
+        </div>
+
+        <img src="img/Mayuree-02.jpg" alt="Mayuree holding a book and smiling" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">My work</h2>
+        <p class="section__subtitle section__subtitle--work">A selection of my projects</p>
+
+        <div class="portfolio">
+
+            <div class="portfolio__card">
+                <a href="grit-tee.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
+                    <img src="img/grit-tee-01.png" alt="grit:Tee marketplace" class="portfolio__img">
+                </a>
+                <div class="portfolio__body">
+                    <h3 class="portfolio__title">grit:Tee</h3>
+                    <ul class="portfolio__tags">
                         <li>Angular</li>
-                        <li>React</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Bootstrap</li>
-                        <li>MongoDB</li>
-                        <li>SQLite</li>
-                        <li>WebSocket</li>
+                        <li>TypeScript</li>
+                        <li>Spring Boot</li>
+                        <li>Java</li>
+                        <li>MongoDB Atlas</li>
+                        <li>Cloudflare R2</li>
+                        <li>Apache Kafka</li>
                         <li>Docker</li>
                         <li>Jenkins</li>
                         <li>SonarQube</li>
-                        <li>GitHub</li>
+                        <li>Hetzner VM</li>
                     </ul>
+                    <a href="grit-tee.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
+                    </a>
                 </div>
-            </div> <!-- / services -->
-            
-            <a href="#work" class="work-btn">My Work</a>
-        </section>
-
-        <!-- About me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">Designer & developer based in Finland</p>
-            
-            <div class="about-me__body">
-                <p>With over a decade of experience in Finnish pharmacies and online retail, I bring a service‑oriented and detail‑driven mindset into software development. My background has trained me to work accurately under pressure, understand user needs, and improve everyday processes, which now shapes how I design and build digital products.</p>
-                <p>Currently, I am focused on modern web and mobile development, learning to create responsive, accessible interfaces and clean, maintainable code while gradually building a portfolio of real projects.</p>
             </div>
-            
-            <img src="img/Mayuree-02.jpg" alt="Mayuree holding a book and smiling" class="about-me__img">
-        </section>
-        
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my projects</p>
-            
-            <div class="portfolio">
 
-                <div class="portfolio__card">
-                    <a href="grit-tee.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
-                        <img src="img/grit-tee-01.png" alt="grit:Tee marketplace" class="portfolio__img">
-                    </a>
-                    <div class="portfolio__body">
-                        <h3 class="portfolio__title">grit:Tee</h3>
-                        <ul class="portfolio__tags">
-                            <li>Angular</li><li>TypeScript</li><li>Spring Boot</li><li>Java</li><li>MongoDB Atlas</li><li>Cloudflare R2</li><li>Apache Kafka</li><li>Docker</li><li>Jenkins</li><li>SonarQube</li><li>Hetzner VM</li>
-                        </ul>
-                        <a href="grit-tee.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
-                        </a>
-                    </div>
-                </div>
-
-                <div class="portfolio__card">
-                    <a href="angul-it.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
-                        <img src="img/angul-it-01.png" alt="Angul IT" class="portfolio__img">
-                    </a>
-                    <div class="portfolio__body">
-                        <h3 class="portfolio__title">Angul-IT</h3>
-                        <ul class="portfolio__tags">
-                            <li>Angular</li><li>TypeScript</li><li>CSS</li>
-                        </ul>
-                        <a href="angul-it.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="portfolio__card">
-                    <a href="daily-todo.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
-                        <img src="img/daily-todo-01.png" alt="Daily Todo" class="portfolio__img">
-                    </a>
-                    <div class="portfolio__body">
-                        <h3 class="portfolio__title">Daily Todo</h3>
-                        <ul class="portfolio__tags">
-                            <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bootstrap   </li><li>localStorage API</li>
-                        </ul>
-                        <a href="daily-todo.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
-                        </a>
-                    </div>
-                </div>
-
-                <div class="portfolio__card">
-                    <a href="piscine-js-igen.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
-                        <img src="img/piscine-js-igen.png" alt="Piscine JS Igen" class="portfolio__img">
-                    </a>
-                    <div class="portfolio__body">
-                        <h3 class="portfolio__title">Piscine JS Igen</h3>
-                        <ul class="portfolio__tags">
-                            <li>JavaScript</li><li>HTML</li><li>CSS</li>
-                        </ul>
-                        <a href="piscine-js-igen.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
-                        </a>
-                    </div>
-                </div>
-
-                <div class="portfolio__card">
-                    <a href="colorcurio.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
-                        <img src="img/colorcurio-02.png" alt="ColorCurio" class="portfolio__img">
-                    </a>
-                    <div class="portfolio__body">
-                        <h3 class="portfolio__title">ColorCurio</h3>
-                        <ul class="portfolio__tags">
-                            <li>JavaScript</li><li>HTML</li><li>CSS</li><li>Bootstrap</li>
-                        </ul>
-                        <a href="colorcurio.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
-                        </a>
-                    </div>
-                </div>
-
-                <div class="portfolio__card">
-                    <a href="christmas-lights.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
-                        <img src="img/christmaslights-01.png" alt="Christmas Lights" class="portfolio__img">
-                    </a>
-                    <div class="portfolio__body">
-                        <h3 class="portfolio__title">Christmas Lights</h3>
-                        <ul class="portfolio__tags">
-                            <li>CSS Animation</li><li>HTML</li>
-                        </ul>
-                        <a href="christmas-lights.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
-                        </a>
-                    </div>
-                </div>
-
-
-
-
-            </div>        
-        </section>
-
-        <!-- Mobile Apps -->
-        <section class="my-mobile-apps" id="mobile">
-            <h2 class="section__title section__title--mobile">Mobile Apps</h2>
-            <p class="section__subtitle section__subtitle--mobile">Flutter projects built for Android &amp; iOS</p>
-
-            <div class="mobile-grid">
-
-                <!-- BizzCard -->
-                <div class="mobile-card">
-                    <div class="mobile-card__icon">
-                        <img src="icons/bizzcard-icon.png" alt="BizzCard icon">
-                    </div>
-
-                    <h3 class="mobile-card__title">BizzCard</h3>
-                    <p class="mobile-card__desc">A simple and elegant digital business card app built with Flutter. It presents personal details, contact information, and professional links in a clean, mobile-friendly interface.</p>
-                    <ul class="mobile-card__tags">
-                        <li>Flutter</li><li>Dart</li><li>State Management</li>
+            <div class="portfolio__card">
+                <a href="worldcup2026-tracker.html" target="_blank" rel="noopener noreferrer"
+                    class="portfolio__img-link">
+                    <img src="img/worldcup2026-tracker.png" alt="World Cup 2026 Tracker" class="portfolio__img">
+                </a>
+                <div class="portfolio__body">
+                    <h3 class="portfolio__title">World Cup 2026 Tracker</h3>
+                    <ul class="portfolio__tags">
+                        <li>React</li>
+                        <li>TypeScript</li>
+                        <li>Vite</li>
+                        <li>React Router</li>
+                        <li>football-data.org API</li>
+                        <li>Vercel</li>
                     </ul>
-                    <a href="https://youtube.com/shorts/iUr8xAC1u74" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-youtube"></i> Watch Demo
-                    </a>
-
-                    <a href="https://github.com/mareerray/bizz_card" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> View on GitHub
+                    <a href="https://github.com/mareerray/worldcup2026-tracker" class="portfolio__link" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
                     </a>
                 </div>
-
-                <!-- Sky Map -->
-                <div class="mobile-card">
-                    <div class="mobile-card__icon">
-                        <img src="icons/skymap-icon.png" alt="Sky Map icon">
-                    </div>
-                    <h3 class="mobile-card__title">Sky Map</h3>
-                    <p class="mobile-card__desc">Interactive sky map that uses GPS, accelerometer, and flutter_compass to show real-time celestial objects. Tilt your phone to explore the sky — tap planets, stars, and 26 constellations for descriptions. Renders at 10+ FPS using CustomPainter and BLoC.</p>
-                    <ul class="mobile-card__tags">
-                        <li>Flutter</li><li>BLoC</li><li>CustomPainter</li><li>GPS</li><li>Sensors</li>
-                    </ul>
-                    <a href="https://youtube.com/shorts/cpr6I1Da_j4" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-youtube"></i> Watch Demo
-                    </a>
-                    <a href="https://github.com/mareerray/sky-map" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> View on GitHub
-                    </a>
-                </div>
-                
-                <!-- Secure Messenger -->
-                <div class="mobile-card">
-                    <div class="mobile-card__icon">
-                        <img src="icons/cypher-chat.png" alt="Secure Messenger icon">
-                    </div>
-                    <h3 class="mobile-card__title">Secure Messenger</h3>
-                    <p class="mobile-card__desc">A secure messaging app for iOS and Android with Firebase authentication, biometric access, end-to-end encrypted secret chats, real-time messaging, media sharing, contacts management, and QR code profile sharing.</p>
-                    <ul class="mobile-card__tags">
-                        <li>Flutter</li><li>Firebase Auth</li><li>Cloud Firestore</li><li>Cloudflare R2</li><li>End-to-End Encryption</li>
-                    </ul>
-                    <a href="https://github.com/mareerray/secure-messenger" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> View on GitHub
-                    </a>
-                </div>
-
-                <!-- Chess -->
-                <div class="mobile-card">
-                    <div class="mobile-card__icon">
-                        <img src="icons/chess-icon.png" alt="Chess icon">
-                    </div>
-
-                    <h3 class="mobile-card__title">Chess</h3>
-                    <p class="mobile-card__desc">Real-time multiplayer chess with a Flutter frontend and a Go backend over WebSockets. Supports public matchmaking, private rooms with a room code, and a practice bot. Uses Render to host the live server so visitors can try the app online.</p>
-                    <ul class="mobile-card__tags">
-                        <li>Flutter</li><li>Go</li><li>WebSocket</li><li>Render</li>
-                    </ul>
-                    <a href="https://chess-webapp-sks0.onrender.com/" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-solid fa-play"></i> Live Demo
-                    </a>
-                    <a href="https://github.com/mareerray/chess" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> View on GitHub
-                    </a>
-                </div>
-
-                <!-- 2048 -->
-                <div class="mobile-card">
-                    <div class="mobile-card__icon">
-                        <img src="icons/2048-icon.png" alt="2048Game icon">
-                    </div>
-                    <h3 class="mobile-card__title">2048</h3>
-                    <p class="mobile-card__desc">A Flutter implementation of the classic 2048 puzzle game. Swipe to merge tiles and reach 2048. Features smooth tile animations, background music, sound effects, best score saved locally, and a swipe pad for accessibility.</p>
-                    <ul class="mobile-card__tags">
-                        <li>Flutter</li><li>Dart</li><li>shared_preferences</li><li>audioplayers</li>
-                    </ul>
-                    <a href="https://youtube.com/shorts/qs-LQlh9UzQ" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-youtube"></i> Watch Demo
-                    </a>
-                    <a href="https://github.com/mareerray/twenty-forty-eight" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> View on GitHub
-                    </a>
-                </div>
-
-                <!-- BitQuiz -->
-                <div class="mobile-card">
-                    <div class="mobile-card__icon">
-                        <img src="icons/bitquiz-icon.png" alt="BitQuiz icon">
-                    </div>
-                    <h3 class="mobile-card__title">BitQuiz</h3>
-                    <p class="mobile-card__desc">
-                        Flutter quiz app with true/false questions across 10 categories, 10 questions per category. Players get instant feedback on each answer and see a short explanation of the correct answer on the results screen along with their final score.
-                    </p>
-                    <ul class="mobile-card__tags">
-                        <li>Flutter</li><li>Dart</li><li>Quiz</li><li>State Management</li>
-                    </ul>
-                    <a href="https://youtube.com/shorts/Aa2chcnAuyw" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-youtube"></i> Watch Demo
-                    </a>
-
-                    <a href="https://github.com/mareerray/quiz-app" class="mobile-card__link" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i> View on GitHub
-                    </a>
-                </div>
-
-
             </div>
-        </section>
-        
-        
-        <!-- Footer -->
-         <!-- Contact Section -->
-            <section class="contact" id="contact">
-                <div class="contact__content">
-                    <div class="contact__left">
-                        <p class="contact__eyebrow">LET'S TALK</p>
-                        <h2 class="contact__title">Get in touch</h2>
-                        <p class="contact__body">
-                            I'm open to frontend, mobile, and full-stack opportunities across 
-                            Finland. Feel free to reach out — I'd love to hear from you.
-                        </p>
-                        <a href="mailto:mareerray@gmail.com" class="contact__email">
-                            <i class="fa-regular fa-envelope"></i> mareerray@gmail.com
-                        </a>
-                        <div class="contact__buttons">
-                            <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer" class="contact__btn">
-                                <i class="fa-brands fa-github"></i> GitHub
-                            </a>
-                            <a href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer" class="contact__btn">
-                                <i class="fa-brands fa-linkedin"></i> LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact__right">
-                        <img src="img/DevMayuree.png" alt="DevMayuree Logo" class="contact__logo" />
-                    </div>
+
+            <div class="portfolio__card">
+                <a href="daily-todo.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
+                    <img src="img/daily-todo-01.png" alt="Daily Todo" class="portfolio__img">
+                </a>
+                <div class="portfolio__body">
+                    <h3 class="portfolio__title">Daily Todo</h3>
+                    <ul class="portfolio__tags">
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap </li>
+                        <li>localStorage API</li>
+                    </ul>
+                    <a href="daily-todo.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
+                    </a>
                 </div>
-                <div class="contact__footer">
-                    <p>© 2026 Mayuree Reunsati</p>
-                    <p>Designed & coded by Mayuree Reunsati ✦</p>
+            </div>
+
+            <div class="portfolio__card">
+                <a href="piscine-js-igen.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
+                    <img src="img/piscine-js-igen.png" alt="Piscine JS Igen" class="portfolio__img">
+                </a>
+                <div class="portfolio__body">
+                    <h3 class="portfolio__title">Piscine JS Igen</h3>
+                    <ul class="portfolio__tags">
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="piscine-js-igen.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
+                    </a>
                 </div>
-            </section>
-        <script src="js/index.js"></script>
-    </body>
+            </div>
+
+            <div class="portfolio__card">
+                <a href="colorcurio.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
+                    <img src="img/colorcurio-02.png" alt="ColorCurio" class="portfolio__img">
+                </a>
+                <div class="portfolio__body">
+                    <h3 class="portfolio__title">ColorCurio</h3>
+                    <ul class="portfolio__tags">
+                        <li>JavaScript</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                    <a href="colorcurio.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
+                    </a>
+                </div>
+            </div>
+
+            <div class="portfolio__card">
+                <a href="angul-it.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
+                    <img src="img/angul-it-01.png" alt="Angul IT" class="portfolio__img">
+                </a>
+                <div class="portfolio__body">
+                    <h3 class="portfolio__title">Angul-IT</h3>
+                    <ul class="portfolio__tags">
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>CSS</li>
+                    </ul>
+                    <a href="angul-it.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- <div class="portfolio__card">
+                <a href="christmas-lights.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
+                    <img src="img/christmaslights-01.png" alt="Christmas Lights" class="portfolio__img">
+                </a>
+                <div class="portfolio__body">
+                    <h3 class="portfolio__title">Christmas Lights</h3>
+                    <ul class="portfolio__tags">
+                        <li>CSS Animation</li>
+                        <li>HTML</li>
+                    </ul>
+                    <a href="christmas-lights.html" class="portfolio__link" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Project
+                    </a>
+                </div>
+            </div> -->
+
+
+
+
+        </div>
+    </section>
+
+    <!-- Mobile Apps -->
+    <section class="my-mobile-apps" id="mobile">
+        <h2 class="section__title section__title--mobile">Mobile Apps</h2>
+        <p class="section__subtitle section__subtitle--mobile">Flutter projects built for Android &amp; iOS</p>
+
+        <div class="mobile-grid">
+
+            <!-- BizzCard -->
+            <div class="mobile-card">
+                <div class="mobile-card__icon">
+                    <img src="icons/bizzcard-icon.png" alt="BizzCard icon">
+                </div>
+
+                <h3 class="mobile-card__title">BizzCard</h3>
+                <p class="mobile-card__desc">A simple and elegant digital business card app built with Flutter. It
+                    presents personal details, contact information, and professional links in a clean, mobile-friendly
+                    interface.</p>
+                <ul class="mobile-card__tags">
+                    <li>Flutter</li>
+                    <li>Dart</li>
+                    <li>State Management</li>
+                </ul>
+                <a href="https://youtube.com/shorts/iUr8xAC1u74" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i> Watch Demo
+                </a>
+
+                <a href="https://github.com/mareerray/bizz_card" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <!-- Sky Map -->
+            <div class="mobile-card">
+                <div class="mobile-card__icon">
+                    <img src="icons/skymap-icon.png" alt="Sky Map icon">
+                </div>
+                <h3 class="mobile-card__title">Sky Map</h3>
+                <p class="mobile-card__desc">Interactive sky map that uses GPS, accelerometer, and flutter_compass to
+                    show real-time celestial objects. Tilt your phone to explore the sky — tap planets, stars, and 26
+                    constellations for descriptions. Renders at 10+ FPS using CustomPainter and BLoC.</p>
+                <ul class="mobile-card__tags">
+                    <li>Flutter</li>
+                    <li>BLoC</li>
+                    <li>CustomPainter</li>
+                    <li>GPS</li>
+                    <li>Sensors</li>
+                </ul>
+                <a href="https://youtube.com/shorts/cpr6I1Da_j4" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i> Watch Demo
+                </a>
+                <a href="https://github.com/mareerray/sky-map" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <!-- Secure Messenger -->
+            <div class="mobile-card">
+                <div class="mobile-card__icon">
+                    <img src="icons/cypher-chat.png" alt="Secure Messenger icon">
+                </div>
+                <h3 class="mobile-card__title">Secure Messenger</h3>
+                <p class="mobile-card__desc">A secure messaging app for iOS and Android with Firebase authentication,
+                    biometric access, end-to-end encrypted secret chats, real-time messaging, media sharing, contacts
+                    management, and QR code profile sharing.</p>
+                <ul class="mobile-card__tags">
+                    <li>Flutter</li>
+                    <li>Firebase Auth</li>
+                    <li>Cloud Firestore</li>
+                    <li>Cloudflare R2</li>
+                    <li>End-to-End Encryption</li>
+                </ul>
+                <a href="https://github.com/mareerray/secure-messenger" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <!-- Chess -->
+            <div class="mobile-card">
+                <div class="mobile-card__icon">
+                    <img src="icons/chess-icon.png" alt="Chess icon">
+                </div>
+
+                <h3 class="mobile-card__title">Chess</h3>
+                <p class="mobile-card__desc">Real-time multiplayer chess with a Flutter frontend and a Go backend over
+                    WebSockets. Supports public matchmaking, private rooms with a room code, and a practice bot. Uses
+                    Render to host the live server so visitors can try the app online.</p>
+                <ul class="mobile-card__tags">
+                    <li>Flutter</li>
+                    <li>Go</li>
+                    <li>WebSocket</li>
+                    <li>Render</li>
+                </ul>
+                <a href="https://chess-webapp-sks0.onrender.com/" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-solid fa-play"></i> Live Demo
+                </a>
+                <a href="https://github.com/mareerray/chess" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <!-- 2048 -->
+            <div class="mobile-card">
+                <div class="mobile-card__icon">
+                    <img src="icons/2048-icon.png" alt="2048Game icon">
+                </div>
+                <h3 class="mobile-card__title">2048</h3>
+                <p class="mobile-card__desc">A Flutter implementation of the classic 2048 puzzle game. Swipe to merge
+                    tiles and reach 2048. Features smooth tile animations, background music, sound effects, best score
+                    saved locally, and a swipe pad for accessibility.</p>
+                <ul class="mobile-card__tags">
+                    <li>Flutter</li>
+                    <li>Dart</li>
+                    <li>shared_preferences</li>
+                    <li>audioplayers</li>
+                </ul>
+                <a href="https://youtube.com/shorts/qs-LQlh9UzQ" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i> Watch Demo
+                </a>
+                <a href="https://github.com/mareerray/twenty-forty-eight" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+            <!-- BitQuiz -->
+            <div class="mobile-card">
+                <div class="mobile-card__icon">
+                    <img src="icons/bitquiz-icon.png" alt="BitQuiz icon">
+                </div>
+                <h3 class="mobile-card__title">BitQuiz</h3>
+                <p class="mobile-card__desc">
+                    Flutter quiz app with true/false questions across 10 categories, 10 questions per category. Players
+                    get instant feedback on each answer and see a short explanation of the correct answer on the results
+                    screen along with their final score.
+                </p>
+                <ul class="mobile-card__tags">
+                    <li>Flutter</li>
+                    <li>Dart</li>
+                    <li>Quiz</li>
+                    <li>State Management</li>
+                </ul>
+                <a href="https://youtube.com/shorts/Aa2chcnAuyw" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-youtube"></i> Watch Demo
+                </a>
+
+                <a href="https://github.com/mareerray/quiz-app" class="mobile-card__link" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i> View on GitHub
+                </a>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact__content">
+            <div class="contact__left">
+                <p class="contact__eyebrow">LET'S TALK</p>
+                <h2 class="contact__title">Get in touch</h2>
+                <p class="contact__body">
+                    I'm open to frontend, mobile, and full-stack opportunities across
+                    Finland. Feel free to reach out — I'd love to hear from you.
+                </p>
+                <a href="mailto:mareerray@gmail.com" class="contact__email">
+                    <i class="fa-regular fa-envelope"></i> mareerray@gmail.com
+                </a>
+                <div class="contact__buttons">
+                    <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer"
+                        class="contact__btn">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer"
+                        class="contact__btn">
+                        <i class="fa-brands fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="contact__right">
+                <img src="img/DevMayuree.png" alt="DevMayuree Logo" class="contact__logo" />
+            </div>
+        </div>
+        <div class="contact__footer">
+            <p>© 2026 Mayuree Reunsati</p>
+            <p>Designed & coded by Mayuree Reunsati ✦</p>
+        </div>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+
 </html>
