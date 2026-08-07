@@ -23,8 +23,8 @@
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
 
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
 @media (min-width: 900px) {
@@ -35,6 +35,191 @@
         --fs-body: 1.125rem;
     }
 }
+
+/* ============================================================
+    PREMIUM WARM THEME OVERRIDE
+   ============================================================ */
+
+:root {
+    /* --- Core palette swap (your terracotta/cream palette) --- */
+    --clr-light: #fffaf5;
+    /* was #fff   -> surface-strong / text-on-dark */
+    --clr-mid: #f6f1eb;
+    /* was #f5f5f5 -> app background */
+    --clr-dark: #241c17;
+    /* was #303030 -> body text + dark section bg */
+    --clr-darker: #17110c;
+    /* was black   -> deepest section bg */
+    --clr-accent: #b86b4b;
+    /* was #16e0bd -> terracotta accent */
+
+    /* --- New supporting tokens --- */
+    --clr-accent-hover: #9f5739;
+    --clr-accent-soft: #f4dfd3;
+    --clr-success: #2f6b46;
+    --clr-border: #decfc2;
+    --clr-border-strong: #cdb8a7;
+
+    /* Glass surfaces (used on light sections) */
+    --surface: rgba(255, 252, 248, 0.88);
+    --surface-strong: #fffaf5;
+
+    /* Consistent radius scale */
+    --radius-lg: 24px;
+    --radius-md: 14px;
+    --radius-sm: 10px;
+
+    /* Warm, soft elevation shadow (replaces --bs on key elements) */
+    --shadow: 0 20px 50px rgba(54, 33, 19, 0.12);
+    --shadow-sm: 0 8px 20px rgba(54, 33, 19, 0.10);
+
+    /* Optional premium display font for h1/h2 */
+    --ff-display: 'Fraunces', var(--ff-primary);
+}
+
+/* ============================================================
+    TYPOGRAPHY POLISH
+   ============================================================ */
+
+h1,
+h2 {
+    font-family: var(--ff-display);
+    letter-spacing: -0.01em;
+}
+
+.section__title--intro strong {
+    color: var(--clr-accent);
+}
+
+/* ============================================================
+    GLASS HEADER (replaces flat transparent header)
+   ============================================================ */
+
+header {
+    background: rgba(255, 250, 245, 0.55);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid rgba(222, 207, 194, 0.5);
+    transition: background 200ms ease;
+}
+
+.logo {
+    filter: none;
+    /* your invert(1) was tuned for dark logos on transparent bg */
+}
+
+/* ============================================================
+    BUTTONS — soft lift instead of scale-pop
+   ============================================================ */
+
+.btn,
+.work-btn {
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-sm);
+    transition: transform 220ms ease, box-shadow 220ms ease, background 220ms ease;
+}
+
+.btn:hover,
+.work-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+    background: var(--clr-accent-hover);
+}
+
+.btn:focus-visible,
+.work-btn:focus-visible,
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--clr-accent-soft);
+    outline-offset: 2px;
+}
+
+/* ============================================================
+    OPEN TO WORK badge — use success green, add soft glow pulse
+   ============================================================ */
+
+.open-to-work--visible {
+    color: var(--clr-success);
+    background: rgba(47, 107, 70, 0.08);
+    border: 1px solid rgba(47, 107, 70, 0.25);
+}
+
+.open-to-work__dot {
+    background-color: var(--clr-success);
+    box-shadow: 0 0 0 0 rgba(47, 107, 70, 0.5);
+    animation: pulse-dot 2.2s ease-out infinite;
+}
+
+@keyframes pulse-dot {
+    0% {
+        box-shadow: 0 0 0 0 rgba(47, 107, 70, 0.45);
+    }
+
+    70% {
+        box-shadow: 0 0 0 8px rgba(47, 107, 70, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(47, 107, 70, 0);
+    }
+}
+
+/* ============================================================
+    PORTFOLIO / MOBILE CARDS — warm glass instead of white tint
+   ============================================================ */
+
+.portfolio__card,
+.mobile-card {
+    background: rgba(255, 250, 244, 0.06);
+    border: 1px solid rgba(255, 250, 244, 0.14);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(2px);
+}
+
+.portfolio__card:hover,
+.mobile-card:hover {
+    background: rgba(184, 107, 75, 0.10);
+    border-color: rgba(184, 107, 75, 0.28);
+}
+
+.tech-list li,
+.portfolio__tags li,
+.mobile-card__tags li {
+    background: rgba(255, 250, 244, 0.08);
+    border: 1px solid rgba(255, 250, 244, 0.16);
+}
+
+/* ============================================================
+    CONTACT SECTION — pill buttons on the new radius scale
+   ============================================================ */
+
+.contact__email,
+.contact__btn {
+    border-radius: var(--radius-sm);
+    transition: transform 200ms ease, background 200ms ease, color 200ms ease;
+}
+
+.contact__email:hover,
+.contact__btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer stays consistent with the deepest brown instead of hardcoded #111 */
+.footer {
+    background: var(--clr-darker);
+}
+
+/* ============================================================
+    INTRO / ABOUT IMAGES — swap flat drop shadow for the warm one
+   ============================================================ */
+
+.intro__img,
+.about-me__img {
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-md);
+}
+
+
 
 /* General styles */
 
@@ -68,7 +253,8 @@ strong {
 
 /* Buttons */
 
-.btn, .work-btn {
+.btn,
+.work-btn {
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
@@ -82,7 +268,8 @@ strong {
     transition: transform 200ms ease-in-out;
 }
 
-.btn:hover, .work-btn:hover {
+.btn:hover,
+.work-btn:hover {
     transform: scale(1.1);
 }
 
@@ -94,9 +281,17 @@ h3 {
     margin: 0;
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
+h1 {
+    font-size: var(--fs-h1)
+}
+
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h3 {
+    font-size: var(--fs-h3)
+}
 
 .section__title {
     margin-top: .5em;
@@ -134,32 +329,34 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 99;  /* just below .nav which is z-index: 100 */
-    background: transparent; /* keeps background solid while scrolling */
+    z-index: 99;
+    /* just below .nav which is z-index: 100 */
+    background: transparent;
+    /* keeps background solid while scrolling */
 }
 
 .logo {
-    max-width: 64px;
+    max-width: 60px;
     opacity: 0.9;
-    filter: invert(1);
+    filter: invert(90%);
 }
 
 .nav-social {
     display: flex;
     gap: 1.5rem;
     align-items: start;
-    margin-right: 3.5rem;   
+    margin-right: 3.5rem;
 }
 
 .nav-social a {
-    color: var(--clr-accent); 
+    color: var(--clr-accent);
     font-size: 2rem;
     opacity: 0.8;
     transition: opacity 0.2s ease;
 }
 
 .nav-social a:hover {
-    color: var(--clr-dark); 
+    color: var(--clr-dark);
     opacity: 1;
 }
 
@@ -172,7 +369,7 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-    
+
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -265,13 +462,71 @@ header {
     right: 0;
 }
 
-.hamburger::before { top: 10px; }
-.hamburger::after { bottom: 10px; }
+.hamburger::before {
+    top: 10px;
+}
 
+.hamburger::after {
+    bottom: 10px;
+}
+
+/* ============================================================
+   NAV LINK VISIBILITY FIX
+   Problem: browser default a:visited styling (dim/desaturated)
+   was overriding "color: inherit" on .nav__link, so any tab
+   you'd already clicked/scrolled to faded into the dark nav
+   background — only the freshly "active" tab stayed visible.
+   Fix: explicitly set color on every link state so nothing
+   falls back to the UA default.
+   ============================================================ */
+
+.nav__link,
+.nav__link:link,
+.nav__link:visited {
+    color: var(--clr-light);
+    /* cream, always, regardless of visited state */
+    opacity: 1;
+}
+
+.nav__link:hover,
+.nav__link:focus-visible {
+    color: var(--clr-accent);
+    /* terracotta on hover/focus */
+}
+
+/* Optional: give the current page/section its own clear marker
+    instead of a plain black box. Add class="nav__link active"
+   or aria-current="page" to the current link in your HTML. */
+.nav__link.active,
+.nav__link[aria-current="page"] {
+    color: var(--clr-accent);
+    position: relative;
+}
+
+.nav__link.active::after,
+.nav__link[aria-current="page"]::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    width: 1.5em;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--clr-accent);
+}
+
+/* Safety net: make sure the full nav overlay is always your
+   warm dark tone, never literal black, even before JS/toggle
+   classes settle. */
+.nav {
+    background: var(--clr-dark);
+}
 
 /*  Intro section  */
 
-#home,.intro {
+#home,
+.intro {
     position: relative;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -286,7 +541,8 @@ header {
 }
 
 .open-to-work {
-    display: none; /* hidden by default */
+    display: none;
+    /* hidden by default */
 }
 
 .open-to-work--visible {
@@ -313,19 +569,19 @@ header {
         width: min-content;
         margin: 0 auto;
         grid-column-gap: 1em;
-        grid-template-areas: 
+        grid-template-areas:
             "img title"
             "img subtitle";
         grid-template-columns: min-content max-content;
     }
-    
+
     .intro__img {
         grid-area: img;
         min-width: 300px;
         position: relative;
         z-index: 2;
-    }  
-    
+    }
+
     .section__subtitle--intro {
         align-self: start;
         grid-column: -1 / 1;
@@ -426,7 +682,7 @@ header {
             "title img"
             "subtitle img"
             "text img";
-            grid-column-gap: 2em;
+        grid-column-gap: 2em;
     }
 
     .section__title--about {
@@ -442,9 +698,9 @@ header {
         width: calc(100% + 2em);
         padding-left: 2em;
         padding-right: calc(200px + 4em);
-        
+
     }
-    
+
     .about-me__img {
         grid-area: img;
         position: relative;
@@ -457,7 +713,7 @@ header {
 .my-work {
     background-color: var(--clr-darker);
     color: var(--clr-light);
-    text-align: center;    
+    text-align: center;
 }
 
 .section__subtitle--work {
@@ -498,7 +754,7 @@ header {
     width: 100%;
     display: block;
     transition: transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
+        opacity 250ms linear;
 }
 
 .portfolio__img-link:hover .portfolio__img {
@@ -639,7 +895,7 @@ header {
     align-items: center;
     gap: 0.5rem;
     background: transparent;
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--clr-light);
     padding: 0.6em 1.2em;
     border-radius: 6px;
@@ -656,7 +912,8 @@ header {
 .contact__logo {
     width: 300px;
     opacity: 0.9;
-    filter: invert(1); /* removes if logo looks wrong */
+    filter: invert(1);
+    /* removes if logo looks wrong */
 }
 
 .contact__footer {
@@ -664,7 +921,7 @@ header {
     justify-content: space-between;
     margin-top: 3em;
     padding-top: 1.5em;
-    border-top: 1px solid rgba(255,255,255,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 1rem;
     opacity: 0.5;
     max-width: 1200px;
@@ -672,16 +929,18 @@ header {
     margin-right: auto;
 }
 
-/* Add this at the bottom of your style.css */
+/* Add this at the bottom of your styles.css */
 @media (max-width: 768px) {
     .contact__content {
-        flex-direction: column;  /* stack left and right vertically */
+        flex-direction: column;
+        /* stack left and right vertically */
         text-align: center;
         align-items: center;
     }
 
     .contact__logo {
-        width: 180px;  /* bigger on mobile */
+        width: 180px;
+        /* bigger on mobile */
         margin-top: 2rem;
     }
 
@@ -708,7 +967,7 @@ header {
     font-weight: var(--fw-bold);
 }
 
-.footer a { 
+.footer a {
     color: inherit;
     text-decoration: none;
 }
@@ -741,7 +1000,7 @@ header {
     padding: 0 2em 2em;
     max-width: 1000px;
     margin: 0 auto;
-    
+
 }
 
 .portfolio-item-individual img {
@@ -814,12 +1073,14 @@ header {
 }
 
 /* Center the play section content like the text above */
-.play-game, .action-btn {
+.play-game,
+.action-btn {
     text-align: center;
     padding: 0;
 }
 
-.play-game p, .action-btn p {
+.play-game p,
+.action-btn p {
     max-width: 600px;
     margin: 0.5em auto;
 }
@@ -932,7 +1193,7 @@ header {
     transition: opacity 200ms ease;
 }
 
-.mobile-card__link + .mobile-card__link {
+.mobile-card__link+.mobile-card__link {
     margin-top: 0.35em;
 }
 
