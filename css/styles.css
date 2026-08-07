@@ -97,8 +97,8 @@ h2 {
 
 header {
     background: rgba(255, 250, 245, 0.55);
-    backdrop-filter: blur(14px) saturate(140%);
     -webkit-backdrop-filter: blur(14px) saturate(140%);
+    backdrop-filter: blur(14px) saturate(140%);
     border-bottom: 1px solid rgba(222, 207, 194, 0.5);
     transition: background 200ms ease;
 }
@@ -173,6 +173,7 @@ button:focus-visible {
     background: rgba(255, 250, 244, 0.06);
     border: 1px solid rgba(255, 250, 244, 0.14);
     border-radius: var(--radius-md);
+    -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
 
@@ -1195,14 +1196,56 @@ header {
     opacity: 0.7;
 }
 
-/* Scroll-reveal (JS-driven, no-op if prefers-reduced-motion or JS disabled) */
+/* ============================================================
+    ANIMATIONS — scroll-reveal, split-word and custom cursor
+   ============================================================ */
+
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 600ms ease, transform 600ms ease;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 600ms ease, transform 600ms ease;
 }
 
 .reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.split-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: word-in 500ms ease forwards;
+}
+
+@keyframes word-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    body {
+        cursor: none;
+    }
+
+    .cursor-dot {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: var(--clr-accent);
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: transform 150ms ease;
+        mix-blend-mode: difference;
+    }
+
+    .cursor-dot.is-active {
+        transform: translate(-50%, -50%) scale(2.5);
+    }
 }
