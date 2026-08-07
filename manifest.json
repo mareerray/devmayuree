@@ -1,0 +1,54 @@
+{
+    "name": "Mayuree Reunsati — Full-Stack & Mobile Developer",
+    "short_name": "DevMayuree",
+    "description": "Portfolio of Mayuree Reunsati, a full-stack and mobile developer specializing in React, Flutter, and modern web technologies.",
+    "id": "/devmayuree/",
+    "start_url": "/devmayuree/",
+    "scope": "/devmayuree/",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "background_color": "#f6f1eb",
+    "theme_color": "#b86b4b",
+    "lang": "en",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/icon-192-maskable.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon-512-maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ],
+    "screenshots": [],
+    "shortcuts": [
+        {
+            "name": "My Work",
+            "short_name": "Work",
+            "url": "/devmayuree/#work",
+            "description": "Jump to portfolio projects"
+        },
+        {
+            "name": "Contact",
+            "short_name": "Contact",
+            "url": "/devmayuree/#contact",
+            "description": "Get in touch"
+        }
+    ]
+}

@@ -338,7 +338,7 @@ header {
 .logo {
     max-width: 46px;
     opacity: 0.9;
-    filter: invert(90%);
+    /* filter: invert(90%); */
 }
 
 .nav-social {
