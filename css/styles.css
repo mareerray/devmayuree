@@ -237,8 +237,8 @@ html {
 
 body {
     background: var(--clr-light);
-    background-image: radial-gradient(rgba(184, 107, 75, 0.05) 4px, transparent 1px);
-    background-size: 10px 10px;
+    background-image: radial-gradient(rgba(184, 107, 75, 0.1) 4px, transparent 4.5px);
+    background-size: 10px 12px;
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
