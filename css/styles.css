@@ -336,7 +336,7 @@ header {
 }
 
 .logo {
-    max-width: 60px;
+    max-width: 46px;
     opacity: 0.9;
     filter: invert(90%);
 }
@@ -471,13 +471,7 @@ header {
 }
 
 /* ============================================================
-   NAV LINK VISIBILITY FIX
-   Problem: browser default a:visited styling (dim/desaturated)
-   was overriding "color: inherit" on .nav__link, so any tab
-   you'd already clicked/scrolled to faded into the dark nav
-   background — only the freshly "active" tab stayed visible.
-   Fix: explicitly set color on every link state so nothing
-   falls back to the UA default.
+    NAV LINK VISIBILITY 
    ============================================================ */
 
 .nav__link,
@@ -517,7 +511,7 @@ header {
 }
 
 /* Safety net: make sure the full nav overlay is always your
-   warm dark tone, never literal black, even before JS/toggle
+    warm dark tone, never literal black, even before JS/toggle
    classes settle. */
 .nav {
     background: var(--clr-dark);
