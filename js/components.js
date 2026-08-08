@@ -6,7 +6,7 @@ if (siteShell) {
             <div class="logo">
                 <a href="/devmayuree/">
                     <img
-                        src="/img/devmayuree-logo.png"
+                        src="/devmayuree/img/devmayuree-logo.png"
                         alt="DevMayuree Logo">
                 </a>
             </div>
