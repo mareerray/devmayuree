@@ -672,19 +672,3 @@
         grid-template-columns: 1fr;
     }
 }
-
-/* @media (max-width: 600px) {
-    .project-tabs {
-        gap: 0.5rem;
-    }
-
-    .project-tab {
-        flex: 1 1 100%;
-        padding: 0.65rem 0.5rem;
-    }
-
-    #web-panel .portfolio,
-    #mobile-panel .mobile-grid {
-        grid-template-columns: 1fr;
-    }
-} */
