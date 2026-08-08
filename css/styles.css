@@ -238,7 +238,7 @@ body {
         /* Lower-right terracotta motif */
         radial-gradient(
             ellipse 132% 104% at 78% 100%,
-            rgba(184, 107, 75, 0.5),
+            rgba(184, 107, 75, 0.3),
             transparent 70%
         ),
 
@@ -315,18 +315,6 @@ body::after {
         top: 12%;
     }
 }
-
-/*body {
-    background: var(--clr-light);
-    /* background-image: radial-gradient(rgba(184, 107, 75, 0.05) 4px, transparent 4.5px);
-    background-size: 10px 12px; */
-    /*background-image: radial-gradient(ellipse 70% 60% at 50% 0%, rgba(184, 107, 75, 0.08), transparent 70%);
-    color: var(--clr-dark);
-    margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-}*/
 
 section {
     padding: 1em 2em;
