@@ -630,6 +630,18 @@ header {
     flex-shrink: 0;
 }
 
+.open-to-work__text {
+    margin: 20px;
+    text-align: left;
+}
+
+.open-to-work__text img {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 100%;
+}
+
 @media (min-width: 900px) {
     .intro {
         display: grid;
