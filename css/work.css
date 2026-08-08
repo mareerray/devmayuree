@@ -24,7 +24,7 @@
 }
 
 .portfolio__card {
-    background: rgba(255, 255, 255, 0.05);
+    background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     overflow: hidden;
@@ -82,10 +82,10 @@
 
 .portfolio__tags li {
     padding: 0.15rem 0.55rem;
-    border-radius: 999px;
+    border-radius: 8px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     color: white;
     letter-spacing: 0.02em;
 }
@@ -94,12 +94,11 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4em;
-    color: var(--clr-accent);
+    color: var(--clr-accent-2);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: var(--fw-bold);
     letter-spacing: 0.05em;
-    text-transform: uppercase;
     transition: opacity 200ms ease;
     margin-top: auto;
 }
@@ -156,7 +155,7 @@
 }
 
 .mobile-card {
-    background: rgba(255, 255, 255, 0.05);
+    background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 1.5em;
@@ -201,12 +200,12 @@
 
 .mobile-card__tags li {
     padding: 0.15rem 0.55rem;
-    border-radius: 999px;
+    border-radius: 8px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.15);
     /* background: rgba(22, 224, 189, 0.12);
     border: 1px solid rgba(22, 224, 189, 0.25); */
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     color: white;
     letter-spacing: 0.02em;
 }
@@ -215,12 +214,11 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4em;
-    color: var(--clr-accent);
+    color: var(--clr-accent-2);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: var(--fw-bold);
     letter-spacing: 0.05em;
-    text-transform: uppercase;
     transition: opacity 200ms ease;
 }
 
@@ -572,3 +570,121 @@
         min-height: 440px;
     }
 }
+
+/* ============================================================
+   PROJECT TABS
+   ============================================================ */
+
+.project-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 2rem auto 3rem;
+}
+
+.project-tab {
+    border: 1px solid rgba(255, 250, 245, 0.28);
+    border-radius: 6px;
+    background: transparent;
+    color: rgba(255, 250, 245, 0.72);
+    cursor: pointer;
+    padding: 0.7rem 1.15rem;
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: var(--fw-bold);
+    transition:
+        color 200ms ease,
+        background 200ms ease,
+        border-color 200ms ease;
+}
+
+.project-tab:hover,
+.project-tab:focus-visible {
+    border-color: var(--clr-accent-2);
+    color: var(--clr-light);
+}
+
+.project-tab.is-active {
+    background: var(--clr-accent-2);
+    border-color: var(--clr-accent-2);
+    color: var(--clr-darker);
+}
+
+.project-tab:focus-visible {
+    outline: 3px solid var(--clr-accent-soft);
+    outline-offset: 3px;
+}
+
+.project-panel[hidden] {
+    display: none;
+}
+
+/* Keep the featured layout exactly as it is */
+#featured-panel .project-gallery {
+    display: grid;
+}
+
+/* Old web project layout */
+#web-panel .portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+/* Old mobile project layout */
+#mobile-panel .mobile-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    #web-panel .portfolio,
+    #mobile-panel .mobile-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .project-tabs {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    /* First row: Featured Projects */
+    .project-tab:first-child {
+        grid-column: 1 / -1;
+    }
+
+    /* Second row: Web and Mobile side by side */
+    .project-tab:not(:first-child) {
+        min-width: 0;
+        width: 100%;
+        padding: 0.65rem 0.4rem;
+        font-size: 0.72rem;
+    }
+
+    #web-panel .portfolio,
+    #mobile-panel .mobile-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* @media (max-width: 600px) {
+    .project-tabs {
+        gap: 0.5rem;
+    }
+
+    .project-tab {
+        flex: 1 1 100%;
+        padding: 0.65rem 0.5rem;
+    }
+
+    #web-panel .portfolio,
+    #mobile-panel .mobile-grid {
+        grid-template-columns: 1fr;
+    }
+} */
