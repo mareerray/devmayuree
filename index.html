@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/work.css">
 </head>
 
 <body>
@@ -45,8 +46,11 @@
             <li class="nav__item"><a href="/devmayuree/#home" class="nav__link">Home</a></li>
             <li class="nav__item"><a href="/devmayuree/#services" class="nav__link">My Services</a></li>
             <li class="nav__item"><a href="/devmayuree/#about" class="nav__link">About me</a></li>
-            <li class="nav__item"><a href="/devmayuree/#work" class="nav__link">My Work</a></li>
-            <li class="nav__item"><a href="/devmayuree/#mobile" class="nav__link">Mobile Apps</a></li>
+            <li class="nav__item">
+    <a href="/devmayuree/#work" class="nav__link">Selected Work</a>
+</li>
+            <!-- <li class="nav__item"><a href="/devmayuree/#work" class="nav__link">My Work</a></li>
+            <li class="nav__item"><a href="/devmayuree/#mobile" class="nav__link">Mobile Apps</a></li> -->
         </ul>
     </nav>
 
@@ -56,15 +60,17 @@
             Hi, I am <strong>Mayuree Reunsati</strong>
             <span class="open-to-work open-to-work--visible">
                 <span class="open-to-work__dot"></span>
-                Open to work
+                <p class="open-to-work__text">
+                    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&pause=1000&color=B86B4B&background=00000000&center=true&vCenter=true&width=500&lines=Web+and+mobile+developer;Building+clean+web+and+Flutter+apps;Open+to+roles+in+Finland"
+                        alt="Typing animation: Frontend and mobile developer, building clean web and Flutter apps, open to roles in Finland" />
+                </p>
             </span>
         </h1>
-        <p class="section__subtitle section__subtitle--intro">full-stack & mobile developer</p>
+        <p class="section__subtitle section__subtitle--intro">web & mobile developer</p>
 
         <img src="img/Mayuree-01.jpg" alt="a img of Mayuree Reunsati smiling" class="intro__img">
 
     </section>
-
 
     <!-- My services -->
     <section class="my-services" id="services">
@@ -134,7 +140,236 @@
     </section>
 
     <!-- My Work -->
-    <section class="my-work" id="work">
+<section class="my-work" id="work">
+    <p class="section-label">SELECTED WORK</p>
+
+    <h2 class="selected-work__title">Things I have built</h2>
+
+    <p class="selected-work__intro">
+        Web, full-stack, and mobile projects built with curiosity and care.
+    </p>
+
+    <div class="project-gallery">
+
+        <!-- World Cup Tracker -->
+        <article class="project-tile project-tile--main">
+            <a href="worldcup2026-tracker.html"
+                class="project-tile__image-link"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <img src="img/worldcup2026-tracker.png"
+                    alt="World Cup 2026 Tracker interface"
+                    class="project-tile__image">
+            </a>
+
+            <div class="project-tile__content">
+                <p class="project-tile__type">Frontend · React</p>
+
+                <h3>World Cup Tracker</h3>
+
+                <p class="project-tile__description">
+                    A responsive football dashboard with fixtures,
+                    results, standings, and live competition data.
+                </p>
+
+                <ul class="project-tile__tags">
+                    <li>React</li>
+                    <li>TypeScript</li>
+                    <li>Vite</li>
+                </ul>
+
+                <div class="project-tile__links">
+                    <a href="https://worldcup2026-tracker-app.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-play"></i>
+                        Live app
+                    </a>
+
+                    <a href="worldcup2026-tracker.html"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        Read more
+                    </a>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- grit:Tee -->
+        <article class="project-tile project-tile--left">
+            <a href="grit-tee.html"
+                class="project-tile__image-link"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <img src="img/grit-tee-01.png"
+                    alt="grit:Tee e-commerce marketplace"
+                    class="project-tile__image">
+            </a>
+
+            <div class="project-tile__content">
+                <p class="project-tile__type">Team project · Full-stack</p>
+
+                <h3>grit:Tee</h3>
+
+                <p class="project-tile__description">
+                    A team-built e-commerce marketplace using microservices,
+                    Kafka, Docker, and CI/CD.
+                </p>
+
+                <ul class="project-tile__tags">
+                    <li>Angular</li>
+                    <li>Spring Boot</li>
+                    <li>Kafka</li>
+                    <li>Jenkins</li>
+                </ul>
+
+                <a href="grit-tee.html"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    Read more
+                </a>
+            </div>
+        </article>
+
+
+        <!-- Chess -->
+        <article class="project-tile project-tile--right project-tile--icon">
+            <a href="https://chess-webapp-sks0.onrender.com/"
+                class="project-tile__image-link"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <img src="icons/gochess-icon.png"
+                    alt="Chess app"
+                    class="project-tile__image">
+            </a>
+
+            <div class="project-tile__content">
+                <p class="project-tile__type">Mobile · Full-stack</p>
+
+                <h3>Chess</h3>
+
+                <p class="project-tile__description">
+                    Real-time multiplayer chess built with Flutter,
+                    Go, and WebSockets.
+                </p>
+
+                <ul class="project-tile__tags">
+                    <li>Flutter</li>
+                    <li>Go</li>
+                    <li>WebSocket</li>
+                </ul>
+
+                <div class="project-tile__links">
+                    <a href="https://chess-webapp-sks0.onrender.com/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-solid fa-play"></i>
+                        Live app
+                    </a>
+
+                    <a href="https://github.com/mareerray/chess"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- Sky Map -->
+        <article class="project-tile project-tile--bottom-left project-tile--icon">
+            <a href="https://github.com/mareerray/sky-map"
+                class="project-tile__image-link"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <img src="icons/skymap-icon.png"
+                    alt="Sky Map app"
+                    class="project-tile__image">
+            </a>
+
+            <div class="project-tile__content">
+                <p class="project-tile__type">Mobile · Sensors</p>
+
+                <h3>Sky Map</h3>
+
+                <p class="project-tile__description">
+                    An interactive sky map using GPS, device sensors,
+                    CustomPainter, and BLoC.
+                </p>
+
+                <ul class="project-tile__tags">
+                    <li>Flutter</li>
+                    <li>BLoC</li>
+                    <li>GPS</li>
+                </ul>
+
+                <div class="project-tile__links">
+                    <a href="https://youtube.com/shorts/cpr6I1Da_j4" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-youtube"></i> Watch Demo
+                    </a>
+                    <a href="https://github.com/mareerray/sky-map"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- Secure Messenger -->
+        <article class="project-tile project-tile--bottom-right project-tile--icon">
+            <a href="https://github.com/mareerray/secure-messenger"
+                class="project-tile__image-link"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                <img src="icons/cypher-chat.png"
+                    alt="Secure Messenger app"
+                    class="project-tile__image">
+            </a>
+
+            <div class="project-tile__content">
+                <p class="project-tile__type">Mobile · Security</p>
+
+                <h3>Secure Messenger</h3>
+
+                <p class="project-tile__description">
+                    A Flutter messaging app with authentication,
+                    encrypted chats, media sharing, and real-time messaging.
+                </p>
+
+                <ul class="project-tile__tags">
+                    <li>Flutter</li>
+                    <li>Firebase</li>
+                    <li>Encryption</li>
+                </ul>
+
+                <a href="https://github.com/mareerray/secure-messenger"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+    <!-- My Work -->
+    <!-- <section class="my-work" id="work">
         <h2 class="section__title section__title--work">My work</h2>
         <p class="section__subtitle section__subtitle--work">A selection of my projects</p>
 
@@ -287,7 +522,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div class="portfolio__card">
                 <a href="christmas-lights.html" target="_blank" rel="noopener noreferrer" class="portfolio__img-link">
@@ -308,18 +543,18 @@
 
 
 
-        </div>
-    </section>
+        <!-- </div>
+    </section> -->
 
     <!-- Mobile Apps -->
-    <section class="my-mobile-apps" id="mobile">
+    <!-- <section class="my-mobile-apps" id="mobile">
         <h2 class="section__title section__title--mobile">Mobile Apps</h2>
         <p class="section__subtitle section__subtitle--mobile">Flutter projects built for Android &amp; iOS</p>
 
         <div class="mobile-grid">
-
+ -->
             <!-- BizzCard -->
-            <div class="mobile-card">
+            <!-- <div class="mobile-card">
                 <div class="mobile-card__icon">
                     <img src="icons/bizzcard-icon.png" alt="BizzCard icon">
                 </div>
@@ -344,10 +579,10 @@
                         <i class="fa-brands fa-github"></i> View on GitHub
                     </a>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Sky Map -->
-            <div class="mobile-card">
+            <!-- <div class="mobile-card">
                 <div class="mobile-card__icon">
                     <img src="icons/skymap-icon.png" alt="Sky Map icon">
                 </div>
@@ -372,10 +607,10 @@
                         <i class="fa-brands fa-github"></i> View on GitHub
                     </a>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Secure Messenger -->
-            <div class="mobile-card">
+            <!-- <div class="mobile-card">
                 <div class="mobile-card__icon">
                     <img src="icons/cypher-chat.png" alt="Secure Messenger icon">
                 </div>
@@ -390,20 +625,20 @@
                     <li>Cloudflare R2</li>
                     <li>End-to-End Encryption</li>
                 </ul>
-                <div class="portfolio__links">
+                <div class="portfolio__links"> -->
                     <!-- <a href="https://youtube.com/shorts/0g1k6r5J7xM" class="mobile-card__link" target="_blank"
                         rel="noopener noreferrer">
                         <i class="fa-brands fa-youtube"></i> Demo video coming soon
                     </a> -->
-                    <a href="https://github.com/mareerray/secure-messenger" class="mobile-card__link" target="_blank"
+                    <!-- <a href="https://github.com/mareerray/secure-messenger" class="mobile-card__link" target="_blank"
                         rel="noopener noreferrer">
                         <i class="fa-brands fa-github"></i> View on GitHub
                     </a>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Chess -->
-            <div class="mobile-card">
+            <!-- <div class="mobile-card">
                 <div class="mobile-card__icon">
                     <img src="icons/gochess-icon.png" alt="Chess icon">
                 </div>
@@ -429,9 +664,9 @@
                     </a>
                 </div>
             </div>
-
+ -->
             <!-- 2048 -->
-            <div class="mobile-card">
+            <!-- <div class="mobile-card">
                 <div class="mobile-card__icon">
                     <img src="icons/2048-icon.png" alt="2048Game icon">
                 </div>
@@ -455,10 +690,10 @@
                         <i class="fa-brands fa-github"></i> View on GitHub
                     </a>
                 </div>
-            </div>
+            </div> -->
 
             <!-- BitQuiz -->
-            <div class="mobile-card">
+            <!-- <div class="mobile-card">
                 <div class="mobile-card__icon">
                     <img src="icons/bitquiz-icon.png" alt="BitQuiz icon">
                 </div>
@@ -486,10 +721,10 @@
                     </a>
                 </div>
             </div>
+ -->
 
-
-        </div>
-    </section>
+        <!-- </div>
+    </section> -->
 
 
     <!-- Footer -->
