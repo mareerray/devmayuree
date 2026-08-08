@@ -643,15 +643,25 @@ header {
 }
 
 .open-to-work__text {
-    margin: 20px;
+    margin: 10px;
     text-align: left;
 }
 
+.open-to-work__text picture,
 .open-to-work__text img {
     display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     margin-left: 0;
     margin-right: auto;
-    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .open-to-work__text picture,
+    .open-to-work__text img {
+        max-width: 360px;
+    }
 }
 
 @media (min-width: 900px) {
