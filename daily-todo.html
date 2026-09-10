@@ -22,12 +22,12 @@
             <h1 class="section__title section__title--intro">
                 project <strong>daily-todo</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">todo list app</p>
+            <p class="section__subtitle section__subtitle--intro">daily todo app</p>
             <img src="icons/daily-todo-icon.png" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>A modern, responsive todo list application built with vanilla JavaScript, featuring priority management, filtering, and sorting capabilities.</p>
+            <p>A modern, responsive todo list application built with vanilla JavaScript, featuring priority management, calendar-based planning, keyword search, and smart filtering.</p>
             <img src="img/DTD004.png" alt="">  
 
 
@@ -45,8 +45,9 @@
             <p>📅 <strong>Daily Task Organization</strong></p>
             <ul>
                 <li>Date-based task management with intuitive date picker</li>
-                <li>Navigate between days using previous/next buttons</li>
-                <li>View and manage tasks specific to each date</li>
+                <li>Navigate between days using previous/next buttons, or swipe left/right on touchscreen devices</li>
+                <li>Calendar view with flip animation on date change for daily planning</li>
+                <li>Color-coded calendar dots highlight incomplete tasks by status: overdue, due today, or upcoming</li>
                 <li>Tasks are automatically sorted by priority for each date</li>
             </ul>
             
@@ -55,8 +56,16 @@
                 <li>Three priority levels: High (do it now), Medium (finish soon), Low (plan for later)</li>
                 <li>Visual priority indicators with color-coded badges</li>
                 <li>Pulsing animation for high-priority tasks</li>
+                <li>Edit a task's priority to reprioritize — doubles as manual reordering, since the list sorts by priority</li>
             </ul>
             
+            <p>🔎 <strong>Task Search</strong></p>
+            <ul>
+                <li>Search tasks by keyword across all dates, not just the current day</li>
+                <li>Results show each matching task's date, so you can jump straight to it</li>
+                <li>Accessible from the search icon in the bottom navigation</li>
+            </ul>
+
             <p>🔍 <strong>Smart Filtering</strong></p>
             <ul>
                 <li>Filter by completion status (All, Completed, Active)</li>
@@ -72,6 +81,13 @@
             <ul>
                 <li>Sort active tasks by priority with one click</li>
                 <li>Automatically displays uncompleted tasks sorted from high to low priority</li>
+            </ul>
+
+            <p>✅ <strong>Confirmation Dialogs</strong></p>
+            <ul>
+                <li>Confirm dialog before completing a task, with an option to mark it done and repeat it tomorrow</li>
+                <li>Confirm dialog before deleting a task, to prevent accidental removal</li>
+                <li>Reduces the risk of losing a task by mistake</li>
             </ul>
             
             <p>💾 <strong>Data Persistence</strong></p>
@@ -101,13 +117,15 @@
             <p><strong>Usage</strong></p>
             <ul>
                 <li><strong>Switch Language:</strong> Choose a preferred language from the menu to instantly update the interface</li>
-                <li><strong>Select a Date:</strong> Use the date picker or previous/next buttons to navigate between dates</li>
+                <li><strong>Select a Date:</strong> Use the date picker, previous/next buttons, or swipe left/right to navigate between dates</li>
                 <li><strong>Add a Task:</strong> Enter your task, select a priority level, and click the + button</li>
-                <li><strong>Complete a Task:</strong> Click the checkmark icon to mark as complete</li>
-                <li><strong>Delete a Task:</strong> Click the trash icon to remove a task</li>
+                <li><strong>Search Tasks:</strong> Tap the search icon in the bottom nav, type a keyword, and jump straight to a matching task's date</li>
+                <li><strong>Complete a Task:</strong> Click the check button, then confirm — optionally repeat the task tomorrow</li>
+                <li><strong>Delete a Task:</strong> Click the trash icon and confirm to remove a task permanently</li>
+                <li><strong>Edit a Task:</strong> Update a task's text or priority to reprioritize or reorder it</li>
                 <li><strong>Filter Tasks:</strong> Use the dropdown to filter by status or priority</li>
                 <li><strong>Sort Tasks:</strong> Click the "Priority" button to view active tasks sorted by priority</li>
-                <li><strong>Plan & Review:</strong> Navigate dates to plan ahead or review past tasks</li>
+                <li><strong>Plan & Review:</strong> Navigate dates via the calendar to plan ahead or review past tasks</li>
             </ul>
 
             <section class="creators">
@@ -126,7 +144,7 @@
                 <h2 class="section__title">Explore daily-todo</h2>
                 <p>Organize your daily tasks with priority management and smart filtering.</p>
                 <p>
-                    <a class="btn" href="https://mareerray.github.io/daily-todo-list/" target="_blank" rel="noopener noreferrer">
+                    <a class="btn" href="https://dailytodo-xi.vercel.app/" target="_blank" rel="noopener noreferrer">
                     Open daily-todo
                     </a>
                 </p>
