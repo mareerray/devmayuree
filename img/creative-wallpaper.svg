@@ -1,0 +1,206 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="900"
+    height="900"
+    viewBox="0 0 900 900"
+    fill="none"
+>
+    <!--
+        Design + code doodles.
+        Transparent background.
+        Overall visibility is controlled in CSS.
+    -->
+
+    <!-- Loose code symbol -->
+    <g
+        transform="translate(112 118) rotate(-11 46 29)"
+        stroke="#a64b38"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <path d="M24 7L5 27L24 46"/>
+        <path d="M62 7L81 27L62 46"/>
+        <path d="M51 0L36 54"/>
+    </g>
+
+    <!-- Short, imperfect squiggle beside the code -->
+    <path
+        d="
+            M231 178
+            C242 165 247 190 259 178
+            S275 165 285 178
+            S301 189 309 176
+        "
+        stroke="#7f9477"
+        stroke-width="2.5"
+        stroke-linecap="round"
+    />
+
+    <!-- Overlapping colour swatches -->
+    <g transform="translate(616 282)">
+        <rect
+            x="-12"
+            y="-15"
+            width="51"
+            height="61"
+            rx="8"
+            transform="rotate(-17)"
+            fill="#b8c5a5"
+            stroke="#7f9477"
+            stroke-width="2"
+        />
+
+        <rect
+            x="15"
+            y="-1"
+            width="51"
+            height="61"
+            rx="8"
+            transform="rotate(5 40 30)"
+            fill="#e8c3ad"
+            stroke="#b88365"
+            stroke-width="2"
+        />
+
+        <rect
+            x="40"
+            y="17"
+            width="51"
+            height="61"
+            rx="8"
+            transform="rotate(19 65 47)"
+            fill="#b86b4b"
+            stroke="#a64b38"
+            stroke-width="2"
+        />
+
+        <!-- Small mark like a painted highlight -->
+        <path
+            d="M55 40L65 44"
+            stroke="#faf3e7"
+            stroke-width="3"
+            stroke-linecap="round"
+        />
+    </g>
+
+    <!-- Long wandering line near the edge -->
+    <path
+        d="
+            M826 69
+            C788 91 846 117 813 145
+            C785 169 775 133 796 132
+            C827 131 837 190 801 224
+        "
+        stroke="#b88365"
+        stroke-width="2.5"
+        stroke-linecap="round"
+    />
+
+    <!-- Tilted mobile phone -->
+    <g
+        transform="translate(291 555) rotate(12 29 49)"
+        stroke="#a64b38"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <rect
+            x="0"
+            y="0"
+            width="58"
+            height="98"
+            rx="12"
+            fill="#faf3e7"
+        />
+
+        <path d="M22 9H36"/>
+
+        <!-- Small interface illustration -->
+        <rect
+            x="9"
+            y="22"
+            width="40"
+            height="29"
+            rx="5"
+            fill="#dce2cf"
+            stroke="#7f9477"
+            stroke-width="1.8"
+        />
+
+        <circle
+            cx="37"
+            cy="31"
+            r="4"
+            fill="#e8c3ad"
+            stroke="none"
+        />
+
+        <path
+            d="M12 46L23 35L31 42L36 38L46 47"
+            stroke="#7f9477"
+            stroke-width="1.8"
+        />
+
+        <path d="M11 62H43M11 70H33"/>
+
+        <rect
+            x="10"
+            y="80"
+            width="24"
+            height="7"
+            rx="3.5"
+            fill="#e8c3ad"
+            stroke="none"
+        />
+    </g>
+
+    <!-- Sage loop near the phone -->
+    <path
+        d="
+            M397 668
+            C424 689 448 675 439 657
+            C431 642 407 660 428 677
+            C439 686 454 692 470 687
+        "
+        stroke="#7f9477"
+        stroke-width="2.5"
+        stroke-linecap="round"
+    />
+
+    <!-- Small lower squiggle -->
+    <path
+        d="
+            M673 771
+            C683 756 690 786 701 772
+            S719 758 728 771
+            S746 786 755 769
+        "
+        stroke="#a64b38"
+        stroke-width="2.5"
+        stroke-linecap="round"
+    />
+
+    <!-- A quiet curve entering from the left -->
+    <path
+        d="
+            M-12 415
+            C28 392 66 429 49 453
+            C35 473 16 450 34 439
+            C61 423 90 456 82 485
+        "
+        stroke="#7f9477"
+        stroke-width="2"
+        stroke-linecap="round"
+    />
+
+    <!-- Two little pencil marks, not a field of confetti -->
+    <g
+        stroke="#b88365"
+        stroke-width="2.5"
+        stroke-linecap="round"
+    >
+        <path d="M567 103L572 92"/>
+        <path d="M579 111L589 105"/>
+    </g>
+</svg>
