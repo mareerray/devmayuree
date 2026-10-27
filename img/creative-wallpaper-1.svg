@@ -1,0 +1,192 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="640"
+    height="640"
+    viewBox="0 0 640 640"
+    fill="none"
+>
+    <!--
+        Creative workspace motif:
+        browser, pen tool, colour swatches,
+        mobile interface, and small creative sparks.
+
+        Opacity is controlled by CSS.
+    -->
+
+    <!-- Browser window / frontend -->
+    <g
+        transform="translate(56 64) rotate(-9 36 28)"
+        stroke="#a64b38"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <rect
+            x="0"
+            y="0"
+            width="72"
+            height="54"
+            rx="7"
+        />
+
+        <path d="M0 14H72"/>
+
+        <circle cx="9" cy="7" r="1" fill="#a64b38"/>
+        <circle cx="15" cy="7" r="1" fill="#a64b38"/>
+        <circle cx="21" cy="7" r="1" fill="#a64b38"/>
+
+        <path d="M26 26L18 33L26 40"/>
+        <path d="M46 26L54 33L46 40"/>
+        <path d="M39 24L33 42"/>
+    </g>
+
+    <!-- Pen-tool curve / visual design -->
+    <g
+        transform="translate(408 75) rotate(12 44 32)"
+        stroke="#7f9477"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <path d="M7 51C23 51 20 12 49 12C67 12 65 51 82 51"/>
+
+        <path d="M7 51L22 25" stroke-dasharray="3 5"/>
+        <path d="M49 12L66 35" stroke-dasharray="3 5"/>
+
+        <rect
+            x="3"
+            y="47"
+            width="8"
+            height="8"
+            rx="1"
+            fill="#faf3e7"
+        />
+
+        <rect
+            x="45"
+            y="8"
+            width="8"
+            height="8"
+            rx="1"
+            fill="#faf3e7"
+        />
+
+        <rect
+            x="78"
+            y="47"
+            width="8"
+            height="8"
+            rx="1"
+            fill="#faf3e7"
+        />
+
+        <circle cx="22" cy="25" r="3" fill="#faf3e7"/>
+        <circle cx="66" cy="35" r="3" fill="#faf3e7"/>
+    </g>
+
+    <!-- Colour swatch fan / art -->
+    <g
+        transform="translate(111 353)"
+        stroke="#a64b38"
+        stroke-width="1.7"
+        stroke-linejoin="round"
+    >
+        <g transform="rotate(-27 14 56)">
+            <rect
+                x="0"
+                y="0"
+                width="28"
+                height="66"
+                rx="5"
+                fill="#e8c3ad"
+            />
+            <path d="M0 20H28M0 40H28"/>
+        </g>
+
+        <g transform="rotate(-5 14 56)">
+            <rect
+                x="0"
+                y="0"
+                width="28"
+                height="66"
+                rx="5"
+                fill="#dce2cf"
+            />
+            <path d="M0 20H28M0 40H28"/>
+        </g>
+
+        <g transform="rotate(19 14 56)">
+            <rect
+                x="0"
+                y="0"
+                width="28"
+                height="66"
+                rx="5"
+                fill="#f4dfd3"
+            />
+            <path d="M0 20H28M0 40H28"/>
+            <circle cx="14" cy="56" r="2.5"/>
+        </g>
+    </g>
+
+    <!-- Mobile interface -->
+    <g
+        transform="translate(451 397) rotate(9 23 38)"
+        stroke="#a64b38"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+    >
+        <rect
+            x="0"
+            y="0"
+            width="46"
+            height="76"
+            rx="9"
+        />
+
+        <path d="M17 7H29"/>
+
+        <rect
+            x="8"
+            y="18"
+            width="30"
+            height="20"
+            rx="3"
+            fill="#dce2cf"
+        />
+
+        <path d="M9 47H32M9 54H26"/>
+
+        <rect
+            x="8"
+            y="61"
+            width="19"
+            height="6"
+            rx="3"
+            fill="#e8c3ad"
+        />
+    </g>
+
+    <!-- A few small creative sparks -->
+    <g
+        stroke="#b68e69"
+        stroke-width="1.7"
+        stroke-linecap="round"
+    >
+        <path d="M300 234V248M293 241H307"/>
+        <path d="M322 556V568M316 562H328"/>
+        <path d="M566 281V291M561 286H571"/>
+    </g>
+
+    <!-- Quiet pencil-like marks -->
+    <g
+        stroke="#7f9477"
+        stroke-width="1.7"
+        stroke-linecap="round"
+    >
+        <path d="M261 91L267 85"/>
+        <path d="M271 98L277 92"/>
+        <path d="M289 438L295 432"/>
+    </g>
+</svg>

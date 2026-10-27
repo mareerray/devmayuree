@@ -1,117 +1,47 @@
-const siteShell = document.querySelector('#site-shell');
-
-if (siteShell) {
-    siteShell.innerHTML = `
-        <header>
-            <div class="logo">
-                <a href="/devmayuree/">
-                    <img
-                        src="/devmayuree/img/devmayuree-logo.png"
-                        alt="DevMayuree Logo">
-                </a>
-            </div>
-
-            <div class="nav-social">
-                <a
-                    href="https://www.linkedin.com/in/mayuree-reunsati"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn">
-
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-
-                <a
-                    href="https://github.com/mareerray"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub">
-
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </div>
-        </header>
-
-
-        <button
-            class="nav-toggle"
-            type="button"
-            aria-label="Toggle navigation"
-            aria-expanded="false"
-            aria-controls="primary-navigation">
-
-            <span class="hamburger"></span>
-        </button>
-
-
-        <nav
-            class="nav"
-            id="primary-navigation"
-            aria-label="Primary navigation">
-
-            <ul class="nav__list">
-                <li class="nav__item">
-                    <a
-                        href="/devmayuree/#home"
-                        class="nav__link">
-                        Home
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a
-                        href="/devmayuree/#services"
-                        class="nav__link">
-                        My Services
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a
-                        href="/devmayuree/#about"
-                        class="nav__link">
-                        About me
-                    </a>
-                </li>
-
-                <li class="nav__item">
-                    <a
-                        href="/devmayuree/#work"
-                        class="nav__link">
-                        Selected Work
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    `;
-
-
-    const navToggle =
-        siteShell.querySelector('.nav-toggle');
-
-    const navLinks =
-        siteShell.querySelectorAll('.nav__link');
-
-
-    navToggle.addEventListener('click', () => {
-        const isOpen =
-            document.body.classList.toggle('nav-open');
-
-        navToggle.setAttribute(
-            'aria-expanded',
-            String(isOpen)
-        );
+(() => {
+    const shell = document.querySelector('#site-shell');
+    if (!shell) return;
+    shell.innerHTML = `
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="site-brand" href="index.html" aria-label="Mayuree — home">
+            <img src="img/devmayuree-logo.png" alt="" width="43" height="43">
+            <span class="site-brand__name">mayuree<span>.</span></span>
+          </a>
+          <button class="site-menu-toggle" type="button" aria-expanded="false"
+            aria-controls="primary-navigation" hidden>Menu</button>
+          <nav class="site-nav" id="primary-navigation" aria-label="Primary navigation">
+            <a href="index.html#work">Work</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#services">Skills</a>
+            <a href="index.html#contact">Say hello ↗</a>
+          </nav>
+        </div>
+      </header>`;
+    const toggle = shell.querySelector('.site-menu-toggle');
+    const nav = shell.querySelector('.site-nav');
+    const mobile = window.matchMedia('(max-width: 700px)');
+    function setOpen(open) {
+        nav.hidden = mobile.matches && !open;
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.textContent = open ? 'Close' : 'Menu';
+    }
+    function sync() {
+        toggle.hidden = !mobile.matches;
+        setOpen(false);
+    }
+    toggle.addEventListener('click', () => {
+        setOpen(toggle.getAttribute('aria-expanded') !== 'true');
     });
-
-
-    navLinks.forEach((link) => {
-        link.addEventListener('click', () => {
-            document.body.classList.remove('nav-open');
-
-            navToggle.setAttribute(
-                'aria-expanded',
-                'false'
-            );
-        });
+    nav.addEventListener('click', (event) => {
+        if (event.target.closest('a') && mobile.matches) setOpen(false);
     });
-}
+    shell.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && mobile.matches && !nav.hidden) {
+            setOpen(false);
+            toggle.focus();
+        }
+    });
+    mobile.addEventListener('change', sync);
+    sync();
+})();
