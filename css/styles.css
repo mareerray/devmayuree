@@ -390,7 +390,7 @@ section[id] {
 
 .contact__content {
     display: grid;
-    grid-template-columns: 1fr 190px;
+    grid-template-columns: 1fr 490px;
     align-items: center;
     gap: 45px
 }
@@ -413,9 +413,9 @@ section[id] {
 }
 
 .contact__logo {
-    width: 130px;
+    width: 260px;
     border-radius: 5px;
-    justify-self: end
+    justify-self: end;
 }
 
 .contact__footer {
