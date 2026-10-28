@@ -893,9 +893,8 @@ body:not(.portfolio-home) {
 
 .toolkit__group {
     padding: 24px 22px 26px;
-    background: #fffdf8;
     border: 1.5px solid rgba(166, 75, 56, 0.16);
-    border-radius: 22px;
+    border-radius: 8px;
     box-shadow: 0 14px 30px rgba(90, 61, 45, 0.07);
     transition:
         transform 0.25s ease,
@@ -1101,42 +1100,6 @@ body:not(.portfolio-home) {
     }
 }
 
-/* ==========================================
-    FEATURED PROJECT FEATURE LIST
-   ========================================== */
-
-.project-feature-list {
-    display: grid;
-    gap: 10px;
-    margin: 22px 0 24px;
-    padding: 0;
-    list-style: none;
-}
-
-.project-feature-list li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: #4c5546;
-}
-
-.project-feature-list span {
-    display: grid;
-    place-items: center;
-    flex-shrink: 0;
-    width: 28px;
-    height: 28px;
-    border-radius: 9px;
-    background: rgba(184, 197, 165, 0.35);
-    color: #586d47;
-    font-size: 0.8rem;
-}
-
-.project-tile--wide .project-feature-list {
-    max-width: 420px;
-}
 
 /* ==========================================
     FEATURED PROJECT FEATURE LIST
