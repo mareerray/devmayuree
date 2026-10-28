@@ -1036,3 +1036,176 @@ body:not(.portfolio-home)>.intro {
         font-size: 1.08rem;
     }
 }
+
+/* ==========================================
+   TIGHTER ABOUT SECTION
+   ========================================== */
+
+.portfolio-home .about-layout {
+    gap: 45px;
+    align-items: center;
+}
+
+.portfolio-home .about-photo {
+    width: min(300px, 100%);
+    margin-top: 0;
+}
+
+.portfolio-home .about-copy p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+    .portfolio-home .about-layout {
+        gap: 28px;
+    }
+
+    .portfolio-home .about-photo {
+        width: min(240px, 100%);
+    }
+}
+
+@media (max-width: 700px) {
+    .portfolio-home .about-layout {
+        gap: 20px;
+    }
+}
+
+/* ==========================================
+   ABOUT QUOTE
+   ========================================== */
+
+.portfolio-home .about-statement {
+    margin: 30px 0 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.35rem, 2.4vw, 1.7rem);
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--clr-accent);
+}
+
+@media (max-width: 700px) {
+    .portfolio-home .about-statement {
+        margin-top: 22px;
+        font-size: 1.2rem;
+    }
+}
+
+/* ==========================================
+   FEATURED PROJECT FEATURE LIST
+   ========================================== */
+
+.project-feature-list {
+    display: grid;
+    gap: 10px;
+    margin: 22px 0 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #4c5546;
+}
+
+.project-feature-list span {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 9px;
+    background: rgba(184, 197, 165, 0.35);
+    color: #586d47;
+    font-size: 0.8rem;
+}
+
+.project-tile--wide .project-feature-list {
+    max-width: 420px;
+}
+
+/* ==========================================
+   FEATURED PROJECT FEATURE LIST
+   ========================================== */
+
+.project-feature-list {
+    display: grid;
+    gap: 10px;
+    margin: 22px 0 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.project-feature-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #4c5546;
+}
+
+.project-feature-list span {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 9px;
+    background: rgba(184, 197, 165, 0.35);
+    color: #586d47;
+    font-size: 0.8rem;
+}
+
+.project-tile--wide .project-feature-list {
+    max-width: 420px;
+}
+
+.portfolio-home .project-gallery {
+    gap: 42px 36px;
+}
+
+.portfolio-home .project-tile--wide {
+    margin-top: -8px;
+}
+
+.portfolio-home .project-tile--wide .project-tile__content {
+    align-self: center;
+}
+
+/* ==========================================
+   WORK SECTION HEADER
+   ========================================== */
+
+.work-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 38px;
+}
+
+.work-header .section-heading {
+    margin-bottom: 0;
+}
+
+.work-header .project-tabs {
+    margin-bottom: 0;
+    padding-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+    .work-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 22px;
+    }
+
+    .work-header .project-tabs {
+        padding-bottom: 0;
+    }
+}
