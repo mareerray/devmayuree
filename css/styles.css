@@ -390,9 +390,9 @@ section[id] {
 
 .contact__content {
     display: grid;
-    grid-template-columns: 1fr 490px;
+    grid-template-columns: 1fr 390px;
     align-items: center;
-    gap: 45px
+    gap: 35px
 }
 
 .contact__body {
@@ -1208,4 +1208,21 @@ body:not(.portfolio-home)>.intro {
     .work-header .project-tabs {
         padding-bottom: 0;
     }
+}
+
+.toolkit__group-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.toolkit__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.toolkit__icon img {
+    display: block;
 }
