@@ -38,7 +38,7 @@ body {
 img {
     display: block;
     max-width: 100%;
-    height: auto
+    height: auto;
 }
 
 a {
@@ -1199,3 +1199,9 @@ body:not(.portfolio-home) {
 .toolkit__icon img {
     display: block;
 }
+
+.project-demo {
+    margin: 35px auto 55px;
+    max-width: 100%;
+}
+

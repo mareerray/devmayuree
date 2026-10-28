@@ -1,134 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Mayuree Reunsati — frontend and mobile developer in Finland. Portfolio of web apps, Flutter mobile apps, and full-stack projects.">
-        <title>DevMayuree Portfolio Website</title>
-        <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
 
-    </head>
-    <body>
-        <div class="creative-wallpaper" aria-hidden="true"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mayuree Reunsati — frontend and mobile developer in Finland. Portfolio of web apps, Flutter mobile apps, and full-stack projects.">
+    <title>DevMayuree Portfolio Website</title>
+    <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
-        <!-- Nav section -->
-        <div id="site-shell"></div>
+</head>
 
-        <!-- ColorCurio Project -->
-        
-        <section class="intro">
-            <h1 class="section__title section__title--intro">
-                project <strong>color curio</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">color organization app</p>
-            <img src="img/CC002.png" alt="" class="intro__img">
-        </section>
-        
-        <div class="portfolio-item-individual">
-            <p>Color Curio is a creative hub for organising color palettes and mood board inspirations. Designed by Mayuree Reunsati, it allows users to design palettes that feel magical and generate harmonious color schemes in a single click.</p>
-            <img src="img/colorcurio-02.png" alt="">
-            
-            <p><strong>Features</strong></p>
-            <ul>
-                <li>
-                    <strong>Color Lab — Color Harmonies</strong>
-                    <ul>
-                        <li>Explore Harmonies: Find balanced palettes by exploring complementary (maximum contrast) and analogous (harmonious blends) colors based on a starting base color.</li>
-                        <li>Design Inspiration: Input any color to receive immediate suggested matching colors to kickstart your creative process.</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Custom Palette Creator (🚧 Coming Soon!)</strong>
-                    <ul>
-                        <li>Build & Preview: Tools to build, save, and preview your own palettes (up to 6 colors) with live mockups are currently under development.</li>
-                        <li>Check Back Soon: Look forward to full palette creation tools in a future update ✨</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Mood Board</strong>
-                    <ul>
-                        <li>Visual Inspiration Hub: Upload images with automatic 10-color palette extraction - detects gold, purple, reds, pinks, and accents even if small.</li>
-                        <li>Smart Workflow: Click swatches to copy hex codes, right-click to download image with palette or copy all colors, fullscreen lightbox view.</li>
-                        <li>Organized Collection: Responsive grid, 15-image storage limit with warnings, delete custom images (samples protected).</li>
-                    </ul>
-                </li>
-                <li>
-                    <strong>Color Palette Archive</strong>
-                    <ul>
-                        <li>Curated Library: Browse a collection of 30+ professional sample palettes.</li>
-                        <li>Smart Search: Instantly search for inspiration by name, mood, or style.</li>
-                        <li>Quick Copy: Click any individual color to copy its hex code directly to your clipboard.</li>
-                        <li>Read-Only Library: This section serves as a permanent, curated inspiration source</li>
-                    </ul>
-                </li>
-            </ul>
+<body>
+    <div class="creative-wallpaper" aria-hidden="true"></div>
 
-            <p><strong>Tech Stack</strong></p>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Bootstrap</li>
-                <li>JavaScript (vanilla, modular) </li>
-                <li>Google Fonts</li>
-                <li>Font Awesome icons</li>
-            </ul>
+    <!-- Nav section -->
+    <div id="site-shell"></div>
 
-            <section class="creators">
-                <p><strong>Creators</strong></p>
-                <ul class="creators__list">
-                    <li>
-                        <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer">
-                            Mayuree Reunsati
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
+    <!-- ColorCurio Project -->
+
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            project <strong>color curio</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">color organization app</p>
+        <img src="img/CC002.png" alt="ColorCurio interface showing a generated colour palette" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>
+            ColorCurio is a creative hub for exploring colour harmonies,
+            organising palettes, and collecting mood-board inspiration.
+            Enter a base colour to generate matching colour suggestions,
+            preview palettes in different frame styles, and extract colours
+            from inspiration images. </p>
+
+        <img src="img/CC-demo.gif"
+            alt="Demonstration of ColorCurio generating colour harmonies and extracting colours from an image"
+            loading="lazy">
+
+        <p><strong>Features</strong></p>
+
+        <ul>
+            <li>
+                <strong>Colour Lab</strong>
+                <ul>
+                    <li>Generate complementary and analogous colour harmonies from a base colour.</li>
+                    <li>Enter any colour to receive immediate matching-colour suggestions.</li>
+                    <li>Explore balanced palettes for design and creative work.</li>
                 </ul>
-            </section>
+            </li>
 
-            <section class="action-btn">
-                <h2 class="section__title">Explore Color Curio</h2>
-                <p>Discover color harmonies, curated palettes, and mood board inspirations.</p>
-                <p>
-                    <a class="btn" href="https://mareerray.github.io/ColorCurio/" target="_blank" rel="noopener noreferrer">
-                    Open Color Curio
-                    </a>
-                </p>
-            </section>
-        </div>
-        
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:dev.mayuree@gmail.com" class="footer__link">dev.mayuree@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+            <li>
+                <strong>Colour Palette Archive</strong>
+                <ul>
+                    <li>Browse more than 30 curated sample palettes.</li>
+                    <li>Search by palette name, mood, or style.</li>
+                    <li>Click a colour to copy its hex code.</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Studio</strong>
+                <ul>
+                    <li>Preview a selected palette in four frame styles: landscape, web page, poster, and brand.</li>
+                    <li>Choose from palettes preloaded from the Color Palette Archive.</li>
+                    <li>Switch between palettes to compare them in different visual contexts.</li>
+                    <li>Download the generated palette preview (in progress).</li>
+                    <li>Wallpaper Builder for creating custom wallpapers from a palette (coming soon).</li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Mood Board</strong>
+                <ul>
+                    <li>Upload inspiration images and automatically extract a 10-colour palette.</li>
+                    <li>Click a swatch to copy its hex code.</li>
+                    <li>Download an image with its palette or copy all extracted colours.</li>
+                    <li>View images in a responsive grid and fullscreen lightbox.</li>
+                    <li>Store up to 15 custom images, with warnings as the limit approaches.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p><strong>Tech Stack</strong></p>
+
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>Vanilla JavaScript</li>
+            <li>LocalStorage</li>
+            <li>JSON</li>
+            <li>Google Fonts</li>
+            <li>Font Awesome</li>
+        </ul>
+        <section class="creators">
+            <p><strong>Creators</strong></p>
+            <ul class="creators__list">
+                <li>
+                    <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer">
+                        Mayuree Reunsati
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/" target="_blank" rel="noopener noreferrer" title="Instagram">
-                        <i class="fa-brands fa-instagram"></i>                    
-                    </a>
-                </li>
-
             </ul>
-        </footer>  
+        </section>
 
-        
-        
-        <script src="js/components.js"></script>
-        <script src="js/animations.js" defer></script>
-        <script src="js/tabcontroller.js" defer></script>
+        <section class="action-btn">
+            <h2 class="section__title">Explore Color Curio</h2>
+            <p>Discover color harmonies, curated palettes, and mood board inspirations.</p>
+            <p>
+                <a class="btn" href="https://mareerray.github.io/ColorCurio/" target="_blank" rel="noopener noreferrer">
+                    Open Color Curio
+                </a>
+            </p>
+        </section>
+    </div>
 
-        
-    </body>
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:dev.mayuree@gmail.com" class="footer__link">dev.mayuree@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/mareerray" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/" target="_blank"
+                    rel="noopener noreferrer" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+
+        </ul>
+    </footer>
+
+
+
+    <script src="js/components.js"></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/tabcontroller.js" defer></script>
+
+
+</body>
+
 </html>
