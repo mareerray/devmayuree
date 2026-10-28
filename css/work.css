@@ -325,3 +325,36 @@
         font-size: 2rem;
     }
 }
+
+/* ==========================================
+   WORK SECTION HEADER
+   ========================================== */
+
+.work-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 38px;
+}
+
+.work-header .section-heading {
+    margin-bottom: 0;
+}
+
+.work-header .project-tabs {
+    margin-bottom: 0;
+    padding-bottom: 6px;
+}
+
+@media (max-width: 900px) {
+    .work-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px;
+    }
+
+    .work-header .project-tabs {
+        padding-bottom: 0;
+    }
+}

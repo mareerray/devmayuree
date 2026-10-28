@@ -57,19 +57,22 @@
             </figure>
         </section>
         <section class="home-section" id="work" aria-labelledby="work-title">
-            <div class="section-heading">
-                <p class="section-label">Made with curiosity</p>
-                <h2 id="work-title">Things I’ve built</h2>
-                <p>Web, mobile, and full-stack projects. Some practical, some playful—all part of learning by making.
-                </p>
-            </div>
-            <div class="project-tabs" role="tablist" aria-label="Project categories">
-                <button class="project-tab is-active" id="featured-tab" type="button" role="tab" aria-selected="true"
-                    aria-controls="featured-panel" tabindex="0">Selected work</button>
-                <button class="project-tab" id="web-tab" type="button" role="tab" aria-selected="false"
-                    aria-controls="web-panel" tabindex="-1">Web &amp; full-stack</button>
-                <button class="project-tab" id="mobile-tab" type="button" role="tab" aria-selected="false"
-                    aria-controls="mobile-panel" tabindex="-1">Mobile apps</button>
+            <div class="work-header">
+         
+                <div class="section-heading">
+                    <p class="section-label">Made with curiosity</p>
+                    <h2 id="work-title">Things I’ve built</h2>
+                    <p>Web, mobile, and full-stack projects. Some practical, some playful—all part of learning by making.
+                    </p>
+                </div>
+                <div class="project-tabs" role="tablist" aria-label="Project categories">
+                    <button class="project-tab is-active" id="featured-tab" type="button" role="tab" aria-selected="true"
+                        aria-controls="featured-panel" tabindex="0">Selected work</button>
+                    <button class="project-tab" id="web-tab" type="button" role="tab" aria-selected="false"
+                        aria-controls="web-panel" tabindex="-1">Web &amp; full-stack</button>
+                    <button class="project-tab" id="mobile-tab" type="button" role="tab" aria-selected="false"
+                        aria-controls="mobile-panel" tabindex="-1">Mobile apps</button>
+                </div>
             </div>
             <!-- Featured projects -->
             <div class="project-panel is-active" id="featured-panel" role="tabpanel" aria-labelledby="featured-tab"
@@ -86,7 +89,7 @@
 
                         <div class="project-tile__content">
                             <p class="project-tile__type">
-                                React · Illustrated interfaces · In progress
+                                React · Illustrated interfaces · YouTube integration
                             </p>
 
                             <h3>KotiloPlay</h3>
@@ -102,6 +105,25 @@
                                 <li>TypeScript</li>
                                 <li>Vite</li>
                                 <li>CSS &amp; SVG</li>
+                            </ul>
+
+                            <ul class="project-feature-list" aria-label="KotiloPlay features">
+                                <li>
+                                    <span aria-hidden="true">♪</span>
+                                    Illustrated rooms and garden
+                                </li>
+                                <li>
+                                    <span aria-hidden="true">↗</span>
+                                    Clickable room links
+                                </li>
+                                <li>
+                                    <span aria-hidden="true">✦</span>
+                                    Animated scenery
+                                </li>
+                                <li>
+                                    <span aria-hidden="true">▶</span>
+                                    Music playback planned
+                                </li>
                             </ul>
 
                             <div class="project-tile__links">
@@ -536,6 +558,10 @@
                 <p>Now I bring that same care to web and mobile development. I enjoy turning ideas into clear
                     interfaces, working through the logic behind them, and testing what I build on real devices.</p>
                 <p>I’m still learning, building, and finding better ways to make things work.</p>
+                <p class="about-statement">
+                    I like building things that feel considered—small details,
+                    clear interactions, and interfaces that make people feel welcome.
+                </p>
             </div>
         </section>
         <section class="home-section toolkit" id="services">
