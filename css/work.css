@@ -327,7 +327,7 @@
 }
 
 /* ==========================================
-   WORK SECTION HEADER
+    WORK SECTION HEADER
    ========================================== */
 
 .work-header {
@@ -351,7 +351,7 @@
     .work-header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0px;
+        gap: 22px;
     }
 
     .work-header .project-tabs {
