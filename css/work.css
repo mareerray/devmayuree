@@ -3,7 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px 24px;
-    margin: 0 0 38px
+    margin: 0 0 38px;
 }
 
 .project-tab {
@@ -13,7 +13,7 @@
     border-bottom: 2px solid transparent;
     background: none;
     color: var(--muted);
-    font-size: .9rem
+    font-size: .9rem;
 }
 
 .project-tab[aria-selected="true"] {
