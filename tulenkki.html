@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Tulenkki — a personal walking journal built by Mayuree Reunsati with React, Python, Flask, PostgreSQL, Supabase Auth, and Docker.">
+
+    <title>Tulenkki — DevMayuree Portfolio</title>
+
+    <link rel="icon" href="img/devmayuree.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="creative-wallpaper" aria-hidden="true"></div>
+
+    <!-- Nav section -->
+    <div id="site-shell"></div>
+
+    <!-- Tulenkki Project -->
+    <section class="intro">
+        <h1 class="section__title section__title--intro">
+            project <strong>Tulenkki</strong>
+        </h1>
+
+        <p class="section__subtitle section__subtitle--intro">
+            Your gentle walking journal
+        </p>
+
+        <img src="img/tulenkki-icon-512.png" alt="Tulenkki app icon" class="intro__img">
+    </section>
+
+    <div class="portfolio-item-individual">
+        <p>
+            Tulenkki is a personal walking journal for recording walks,
+            following a walking-and-rest routine, and reviewing progress
+            through list, calendar, and analytics views.
+        </p>
+
+        <p>
+            I built it for my own walking routine and to strengthen my
+            backend skills with Python, Flask, PostgreSQL, REST APIs,
+            and Docker. The project connects a responsive React interface
+            to a protected Flask API and a cloud-hosted database.
+        </p>
+
+        <img src="img/tulenkki-signin.png" alt="Tulenkki sign-in page with email and password fields" loading="lazy">
+
+        <!-- Features -->
+        <p><strong>Features</strong></p>
+
+        <ul>
+            <li>
+                <strong>Walking records</strong>
+                <ul>
+                    <li>
+                        Add, view, edit, and delete walks.
+                    </li>
+                    <li>
+                        Record the date, duration in whole minutes,
+                        optional distance, and notes.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Calendar and progress</strong>
+                <ul>
+                    <li>
+                        Browse recorded walks in list and calendar views.
+                    </li>
+                    <li>
+                        Review walking progress through analytics,
+                        including average minutes per walk.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Walking-and-rest routine</strong>
+                <ul>
+                    <li>
+                        Follow an eight-day cycle with six walking
+                        days and two rest days.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Authentication and demo access</strong>
+                <ul>
+                    <li>
+                        Sign in with email and password using
+                        Supabase Auth.
+                    </li>
+                    <li>
+                        The Flask API verifies access tokens
+                        and restricts access to the configured user.
+                    </li>
+                    <li>
+                        Explore the app through the “Try demo”
+                        button without entering credentials.
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>Responsive interface</strong>
+                <ul>
+                    <li>
+                        Use the journal on desktop and mobile.
+                    </li>
+                    <li>
+                        Navigate between views with subtle
+                        page transitions.
+                    </li>signin
+                </ul>
+            </li>
+
+            <li>
+                <strong>App installation</strong>
+                <ul>
+                    <li>
+                        Install Tulenkki from Chrome on Android and launch it
+                        from the home screen.
+                    </li>
+                    <li>
+                        Includes a web app manifest and custom icons,
+                        with installation tested on a real Android device.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="img-pair">
+            <img src="img/tulenkki-addwalk.png"
+                alt="Tulenkki form for recording a walk's date, duration, distance, and notes" loading="lazy">
+            <img src="img/tulenkki-walklist.png" alt="Tulenkki list of recorded walks" loading="lazy">
+        </div>
+
+        <!-- Backend and architecture -->
+        <p><strong>Backend and architecture</strong></p>
+
+        <p>
+            The React frontend is hosted on Vercel. It sends API
+            requests with an access token to a Dockerized Flask
+            backend on Render. Flask validates requests and uses
+            parameterized SQL queries to read and update PostgreSQL
+            data hosted on Supabase.
+        </p>
+
+        <ul>
+            <li>
+                Frontend: React displays walking records and
+                provides forms for creating and editing entries.
+            </li>
+            <li>
+                API: Flask handles authentication checks, input
+                validation, and CRUD operations.
+            </li>
+            <li>
+                Database: PostgreSQL stores walking records with
+                constraints for valid durations and distances.
+            </li>
+            <li>
+                Authentication: Supabase Auth handles sign-in,
+                while Flask checks access tokens and the allowed user.
+            </li>
+            <li>
+                Local development: PostgreSQL runs in Docker,
+                and Vite proxies walking-record requests to Flask.
+            </li>
+            <li>
+                Production: The Flask backend runs with Gunicorn
+                inside a Docker container on Render.
+            </li>
+        </ul>
+
+        <!-- Engineering details -->
+        <p><strong>Engineering details</strong></p>
+
+        <p>
+            I focused on the behaviour behind the interface as well
+            as the interface itself: validating input, handling
+            missing records, and keeping stored data consistent.
+        </p>
+
+        <ul>
+            <li>
+                Shared validation logic between create and update
+                operations.
+            </li>
+            <li>
+                Checked that dates are valid, minutes are positive
+                whole numbers, and distances are finite and
+                non-negative.
+            </li>
+            <li>
+                Stored an unknown distance as NULL rather than zero.
+            </li>
+            <li>
+                Used parameterized SQL queries for database operations.
+            </li>
+            <li>
+                Manually tested create, edit, and delete flows,
+                including persistence after refreshing the page.
+            </li>
+            <li>
+                Tested database backup restoration in a separate
+                database and compared row counts.
+            </li>
+        </ul>
+
+        <div class="img-pair">
+            <img src="img/tulenkki-calendar.png" alt="Tulenkki calendar view showing recorded walks" loading="lazy">
+
+            <img src="img/tulenkki-analytics.png" alt="Tulenkki analytics view showing walking progress" loading="lazy">
+        </div>
+
+        <!-- Technology -->
+        <p><strong>Tech stack</strong></p>
+
+        <ul>
+            <li>Frontend: React, Vite, and CSS</li>
+            <li>Backend: Python, Flask, and Gunicorn</li>
+            <li>Database access: Psycopg and parameterized SQL</li>
+            <li>Database: PostgreSQL hosted on Supabase</li>
+            <li>Authentication: Supabase Auth</li>
+            <li>Containers: Docker</li>
+            <li>Hosting: Vercel and Render</li>
+            <li>Version control: Git and GitHub</li>
+        </ul>
+
+        <!-- Learning -->
+        <p><strong>What I learned</strong></p>
+
+        <p>
+            Tulenkki helped me connect the pieces of a full-stack
+            application: React forms, authenticated API requests,
+            backend validation, SQL queries, and deployment.
+        </p>
+
+        <ul>
+            <li>
+                Building a Flask REST API and connecting it to
+                PostgreSQL with Psycopg.
+            </li>
+            <li>
+                Designing database tables with identity columns
+                and constraints.
+            </li>
+            <li>
+                Implementing token verification and protected endpoints.
+            </li>
+            <li>
+                Writing a Dockerfile and running Flask with Gunicorn.
+            </li>
+            <li>
+                Configuring environment variables and debugging
+                CORS and deployment issues.
+            </li>
+            <li>
+                Testing the interface on a real phone and checking
+                API behaviour with curl and browser developer tools.
+            </li>
+            <li>
+                Configuring a web app manifest and maskable icons,
+                and testing installation through Chrome on Android.
+            </li>
+        </ul>
+
+        <!-- Scope and limitations -->
+        <p><strong>Current scope and next steps</strong></p>
+
+        <p>
+            Tulenkki is a personal, single-user application rather
+            than a multi-user service. Core walking-record operations,
+            sign-in, and token checks are implemented, and the
+            frontend and backend are deployed.
+        </p>
+
+        <p>
+            The walking cycle currently uses fixed settings in the
+            frontend. A routine_settings table already exists in
+            the database; connecting the cycle view to those settings
+            is a planned improvement.
+        </p>
+
+        <p>
+            The backend runs on a free hosting plan and sleeps when
+            idle, so the first request after a quiet period may
+            take about a minute.
+        </p>
+
+        <!-- Author -->
+        <section class="creators" aria-labelledby="creator-title">
+            <h2 id="creator-title">Created by</h2>
+
+            <ul class="creators__list">
+                <li>
+                    <a href="https://github.com/mareerray" target="_blank" rel="noopener noreferrer">
+                        Mayuree Reunsati
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Project links -->
+        <section class="action-btn" aria-labelledby="explore-title">
+            <h2 class="section__title" id="explore-title">
+                Explore Tulenkki
+            </h2>
+
+            <p>
+                Open the live app and choose “Try demo” on the sign-in
+                page to explore without entering credentials.
+            </p>
+
+            <p>
+                Please allow about a minute for the backend to wake up
+                on the first request.
+            </p>
+
+            <p>
+                <a class="btn" href="https://tulenkki.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    Open Live App
+                </a>
+            </p>
+
+            <p>
+                <a class="btn" href="https://github.com/mareerray/tulenkki" target="_blank" rel="noopener noreferrer">
+                    View GitHub
+                </a>
+            </p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:dev.mayuree@gmail.com" class="footer__link">
+            dev.mayuree@gmail.com
+        </a>
+
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/mayuree-reunsati" target="_blank"
+                    rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/mareerray" target="_blank"
+                    rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
+            </li>
+
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.instagram.com/uklingducklingmaire/" target="_blank"
+                    rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/components.js"></script>
+    <script src="js/animations.js" defer></script>
+    <script src="js/tabcontroller.js" defer></script>
+</body>
+
+</html>
