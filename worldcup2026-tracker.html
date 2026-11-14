@@ -35,8 +35,11 @@
     <div class="portfolio-item-individual">
         <p>
             A World Cup 2026 tournament dashboard built with React, TypeScript,
-            and Vite. It brings together fixtures, results, group standings,
-            top scorers, team search, and SQL-powered tournament analytics.
+            and Vite. During the tournament, data was retrieved from the
+            football-data.org API and stored in Supabase Postgres. After the
+            tournament, the final data was exported as CSV snapshots, which now power
+            the dashboard’s results, standings, top scorers, team search, and
+            analytics.
         </p>
 
         <img src="img/WC2026tracker-demo.gif" alt="Demonstration of the World Cup 2026 Tracker dashboard"
@@ -75,7 +78,6 @@
                     <li>Group standings for all 12 groups with played, won, drawn, lost, goal difference, and points.
                     </li>
                     <li>Results by matchday and knockout stage.</li>
-                    <li>Fixture list with dates, times, and venues.</li>
                     <li>Team search across all 48 teams, including results, next match, scorers, and status.</li>
                     <li>About page with tournament information, fun facts, and external resources.</li>
                 </ul>
@@ -100,12 +102,35 @@
         <p><strong>Data Architecture</strong></p>
 
         <ul>
-            <li>Match, team, scorer, standings, and analytics data are stored in Supabase Postgres.</li>
-            <li>SQL views prepare frontend-friendly match data and analytics-ready summaries.</li>
-            <li>Analytics views include tournament overview, stage analytics, team performance, and highest-scoring
-                matches.</li>
-            <li>football-data.org is still used for pages that have not yet been migrated to Supabase.</li>
-            <li>Row Level Security keeps tournament data publicly readable but not editable from the browser.</li>
+            <li>
+                During the tournament, match, team, scorer, and standings data was
+                retrieved from the football-data.org API and stored in Supabase
+                Postgres.
+            </li>
+            <li>
+                Supabase SQL views prepared frontend-friendly match data and
+                analytics-ready summaries.
+            </li>
+            <li>
+                After the tournament finished, the data was exported as static CSV
+                snapshots and added to the repository.
+            </li>
+            <li>
+                The React frontend now fetches and parses the CSV files, then joins
+                related records in JavaScript.
+            </li>
+            <li>
+                Match and scorer records store team IDs, while team names, short
+                names, and crest URLs are joined from a separate teams dataset.
+            </li>
+            <li>
+                Analytics data includes a tournament overview, scoring by stage,
+                team performance, and highest-scoring matches.
+            </li>
+            <li>
+                Because the tournament is complete and the data is read-only, the app
+                no longer depends on a live database or external API.
+            </li>
         </ul>
 
         <p><strong>Tech Stack</strong></p>
@@ -115,12 +140,45 @@
             <li>TypeScript</li>
             <li>Vite</li>
             <li>React Router v7</li>
-            <li>Supabase Postgres</li>
-            <li>SQL views</li>
-            <li>football-data.org API</li>
+            <li>Papa Parse</li>
+            <li>Static CSV data snapshots</li>
+            <li>Supabase Postgres <span>(original data storage and SQL views)</span></li>
+            <li>football-data.org API <span>(original tournament data source)</span></li>
             <li>Vitest</li>
             <li>Vercel</li>
         </ul>
+
+        <p><strong>Architecture decision</strong></p>
+
+        <p>
+            During the tournament, the app used football-data.org as its live data
+            source and Supabase Postgres to store, clean, and prepare the data through
+            SQL views. After the tournament ended, the final data was exported as CSV
+            snapshots and moved into the repository.
+        </p>
+
+
+        <p>
+            Because the World Cup 2026 tournament is complete and its results are
+            read-only, the app now uses static CSV snapshots instead of querying a live
+            database or external API. This keeps the dashboard fast, simple to deploy,
+            and independent of API rate limits.
+        </p>
+
+        <p><strong>Data flow</strong></p>
+
+
+        <pre>
+                football-data.org API
+                        ↓
+                Supabase Postgres
+                        ↓
+                SQL views and analytics summaries
+                        ↓
+                CSV snapshots in /public/data
+                        ↓
+                React frontend
+        </pre>
 
         <img src="img/worldcup2026-tracker.png" alt="World Cup 2026 Tracker interface" loading="lazy">
 
